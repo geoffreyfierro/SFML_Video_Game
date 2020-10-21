@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;CMake Files\cmake_modules\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/geoff/sfml_project/cmake-build-debug"/>
+				<Option working_dir="C:/Users/geoff/SFML_Video_Game/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/sfml_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/sfml_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/sfml_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/sfml_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/SFML_Video_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/SFML_Video_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/SFML_Video_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/SFML_Video_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="sfml_project">
-				<Option output="C:/Users/geoff/sfml_project/cmake-build-debug/sfml_project.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/geoff/sfml_project/cmake-build-debug"/>
+				<Option output="C:/Users/geoff/SFML_Video_Game/cmake-build-debug/sfml_project.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/geoff/SFML_Video_Game/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -34,15 +34,15 @@
 					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/sfml_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 sfml_project"/>
-					<CompileFile command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/sfml_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/sfml_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/sfml_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/SFML_Video_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 sfml_project"/>
+					<CompileFile command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/SFML_Video_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/SFML_Video_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/SFML_Video_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="sfml_project/fast">
-				<Option output="C:/Users/geoff/sfml_project/cmake-build-debug/sfml_project.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/geoff/sfml_project/cmake-build-debug"/>
+				<Option output="C:/Users/geoff/SFML_Video_Game/cmake-build-debug/sfml_project.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/geoff/SFML_Video_Game/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -57,130 +57,130 @@
 					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.3.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/sfml_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 sfml_project/fast"/>
-					<CompileFile command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/sfml_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/sfml_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/sfml_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/SFML_Video_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 sfml_project/fast"/>
+					<CompileFile command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/SFML_Video_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/SFML_Video_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/SFML_Video_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/geoff/sfml_project/cmake-build-debug"/>
+				<Option working_dir="C:/Users/geoff/SFML_Video_Game/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/sfml_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/sfml_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/sfml_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/sfml_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/SFML_Video_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/SFML_Video_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/SFML_Video_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/SFML_Video_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/geoff/sfml_project/cmake-build-debug"/>
+				<Option working_dir="C:/Users/geoff/SFML_Video_Game/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/sfml_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/sfml_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/sfml_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/sfml_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/SFML_Video_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/SFML_Video_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/SFML_Video_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/geoff/SFML_Video_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/geoff/sfml_project/GFGame/Background.cpp">
+		<Unit filename="C:/Users/geoff/SFML_Video_Game/GFGame/Background.cpp">
 			<Option target="sfml_project"/>
 		</Unit>
-		<Unit filename="C:/Users/geoff/sfml_project/GFGame/Background.h">
+		<Unit filename="C:/Users/geoff/SFML_Video_Game/GFGame/Background.h">
 			<Option target="sfml_project"/>
 		</Unit>
-		<Unit filename="C:/Users/geoff/sfml_project/GFGame/FinishFlag.cpp">
+		<Unit filename="C:/Users/geoff/SFML_Video_Game/GFGame/FinishFlag.cpp">
 			<Option target="sfml_project"/>
 		</Unit>
-		<Unit filename="C:/Users/geoff/sfml_project/GFGame/FinishFlag.h">
+		<Unit filename="C:/Users/geoff/SFML_Video_Game/GFGame/FinishFlag.h">
 			<Option target="sfml_project"/>
 		</Unit>
-		<Unit filename="C:/Users/geoff/sfml_project/GFGame/GFGame.cpp">
+		<Unit filename="C:/Users/geoff/SFML_Video_Game/GFGame/GFGame.cpp">
 			<Option target="sfml_project"/>
 		</Unit>
-		<Unit filename="C:/Users/geoff/sfml_project/GFGame/GFGame.h">
+		<Unit filename="C:/Users/geoff/SFML_Video_Game/GFGame/GFGame.h">
 			<Option target="sfml_project"/>
 		</Unit>
-		<Unit filename="C:/Users/geoff/sfml_project/GFGame/Game.cpp">
+		<Unit filename="C:/Users/geoff/SFML_Video_Game/GFGame/Game.cpp">
 			<Option target="sfml_project"/>
 		</Unit>
-		<Unit filename="C:/Users/geoff/sfml_project/GFGame/Game.h">
+		<Unit filename="C:/Users/geoff/SFML_Video_Game/GFGame/Game.h">
 			<Option target="sfml_project"/>
 		</Unit>
-		<Unit filename="C:/Users/geoff/sfml_project/GFGame/GameText.cpp">
+		<Unit filename="C:/Users/geoff/SFML_Video_Game/GFGame/GameText.cpp">
 			<Option target="sfml_project"/>
 		</Unit>
-		<Unit filename="C:/Users/geoff/sfml_project/GFGame/GameText.h">
+		<Unit filename="C:/Users/geoff/SFML_Video_Game/GFGame/GameText.h">
 			<Option target="sfml_project"/>
 		</Unit>
-		<Unit filename="C:/Users/geoff/sfml_project/GFGame/Game_Interface.cpp">
+		<Unit filename="C:/Users/geoff/SFML_Video_Game/GFGame/Game_Interface.cpp">
 			<Option target="sfml_project"/>
 		</Unit>
-		<Unit filename="C:/Users/geoff/sfml_project/GFGame/Game_Interface.h">
+		<Unit filename="C:/Users/geoff/SFML_Video_Game/GFGame/Game_Interface.h">
 			<Option target="sfml_project"/>
 		</Unit>
-		<Unit filename="C:/Users/geoff/sfml_project/GFGame/Hearts.cpp">
+		<Unit filename="C:/Users/geoff/SFML_Video_Game/GFGame/Hearts.cpp">
 			<Option target="sfml_project"/>
 		</Unit>
-		<Unit filename="C:/Users/geoff/sfml_project/GFGame/Hearts.h">
+		<Unit filename="C:/Users/geoff/SFML_Video_Game/GFGame/Hearts.h">
 			<Option target="sfml_project"/>
 		</Unit>
-		<Unit filename="C:/Users/geoff/sfml_project/GFGame/LostGameScreen.cpp">
+		<Unit filename="C:/Users/geoff/SFML_Video_Game/GFGame/LostGameScreen.cpp">
 			<Option target="sfml_project"/>
 		</Unit>
-		<Unit filename="C:/Users/geoff/sfml_project/GFGame/LostGameScreen.h">
+		<Unit filename="C:/Users/geoff/SFML_Video_Game/GFGame/LostGameScreen.h">
 			<Option target="sfml_project"/>
 		</Unit>
-		<Unit filename="C:/Users/geoff/sfml_project/GFGame/Map.cpp">
+		<Unit filename="C:/Users/geoff/SFML_Video_Game/GFGame/Map.cpp">
 			<Option target="sfml_project"/>
 		</Unit>
-		<Unit filename="C:/Users/geoff/sfml_project/GFGame/Map.h">
+		<Unit filename="C:/Users/geoff/SFML_Video_Game/GFGame/Map.h">
 			<Option target="sfml_project"/>
 		</Unit>
-		<Unit filename="C:/Users/geoff/sfml_project/GFGame/Monster.cpp">
+		<Unit filename="C:/Users/geoff/SFML_Video_Game/GFGame/Monster.cpp">
 			<Option target="sfml_project"/>
 		</Unit>
-		<Unit filename="C:/Users/geoff/sfml_project/GFGame/Monster.h">
+		<Unit filename="C:/Users/geoff/SFML_Video_Game/GFGame/Monster.h">
 			<Option target="sfml_project"/>
 		</Unit>
-		<Unit filename="C:/Users/geoff/sfml_project/GFGame/MonsterArray.cpp">
+		<Unit filename="C:/Users/geoff/SFML_Video_Game/GFGame/MonsterArray.cpp">
 			<Option target="sfml_project"/>
 		</Unit>
-		<Unit filename="C:/Users/geoff/sfml_project/GFGame/MonsterArray.h">
+		<Unit filename="C:/Users/geoff/SFML_Video_Game/GFGame/MonsterArray.h">
 			<Option target="sfml_project"/>
 		</Unit>
-		<Unit filename="C:/Users/geoff/sfml_project/GFGame/Platform.cpp">
+		<Unit filename="C:/Users/geoff/SFML_Video_Game/GFGame/Platform.cpp">
 			<Option target="sfml_project"/>
 		</Unit>
-		<Unit filename="C:/Users/geoff/sfml_project/GFGame/Platform.h">
+		<Unit filename="C:/Users/geoff/SFML_Video_Game/GFGame/Platform.h">
 			<Option target="sfml_project"/>
 		</Unit>
-		<Unit filename="C:/Users/geoff/sfml_project/GFGame/Player.cpp">
+		<Unit filename="C:/Users/geoff/SFML_Video_Game/GFGame/Player.cpp">
 			<Option target="sfml_project"/>
 		</Unit>
-		<Unit filename="C:/Users/geoff/sfml_project/GFGame/Player.h">
+		<Unit filename="C:/Users/geoff/SFML_Video_Game/GFGame/Player.h">
 			<Option target="sfml_project"/>
 		</Unit>
-		<Unit filename="C:/Users/geoff/sfml_project/GFGame/Thumbnail.cpp">
+		<Unit filename="C:/Users/geoff/SFML_Video_Game/GFGame/Thumbnail.cpp">
 			<Option target="sfml_project"/>
 		</Unit>
-		<Unit filename="C:/Users/geoff/sfml_project/GFGame/Thumbnail.h">
+		<Unit filename="C:/Users/geoff/SFML_Video_Game/GFGame/Thumbnail.h">
 			<Option target="sfml_project"/>
 		</Unit>
-		<Unit filename="C:/Users/geoff/sfml_project/GFGame/WonGameScreen.cpp">
+		<Unit filename="C:/Users/geoff/SFML_Video_Game/GFGame/WonGameScreen.cpp">
 			<Option target="sfml_project"/>
 		</Unit>
-		<Unit filename="C:/Users/geoff/sfml_project/GFGame/WonGameScreen.h">
+		<Unit filename="C:/Users/geoff/SFML_Video_Game/GFGame/WonGameScreen.h">
 			<Option target="sfml_project"/>
 		</Unit>
-		<Unit filename="C:/Users/geoff/sfml_project/main.cpp">
+		<Unit filename="C:/Users/geoff/SFML_Video_Game/main.cpp">
 			<Option target="sfml_project"/>
 		</Unit>
-		<Unit filename="C:/Users/geoff/sfml_project/CMakeLists.txt">
+		<Unit filename="C:/Users/geoff/SFML_Video_Game/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="C:/Users/geoff/sfml_project/cmake_modules/FindSFML.cmake">
+		<Unit filename="C:/Users/geoff/SFML_Video_Game/cmake_modules/FindSFML.cmake">
 			<Option virtualFolder="CMake Files\cmake_modules\"/>
 		</Unit>
 	</Project>

@@ -76,8 +76,8 @@ CMakeFiles/sfml_project.dir/GFGame/Background.cpp.obj
  C:/SFML-2.5.1/include/SFML/Window/Window.hpp
  C:/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  C:/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
- C:/Users/geoff/sfml_project/GFGame/Background.cpp
- C:/Users/geoff/sfml_project/GFGame/Background.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Background.cpp
+ C:/Users/geoff/SFML_Video_Game/GFGame/Background.h
 CMakeFiles/sfml_project.dir/GFGame/FinishFlag.cpp.obj
  C:/SFML-2.5.1/include/SFML/Config.hpp
  C:/SFML-2.5.1/include/SFML/Graphics.hpp
@@ -153,8 +153,8 @@ CMakeFiles/sfml_project.dir/GFGame/FinishFlag.cpp.obj
  C:/SFML-2.5.1/include/SFML/Window/Window.hpp
  C:/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  C:/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
- C:/Users/geoff/sfml_project/GFGame/FinishFlag.cpp
- C:/Users/geoff/sfml_project/GFGame/FinishFlag.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/FinishFlag.cpp
+ C:/Users/geoff/SFML_Video_Game/GFGame/FinishFlag.h
 CMakeFiles/sfml_project.dir/GFGame/GFGame.cpp.obj
  C:/SFML-2.5.1/include/SFML/Config.hpp
  C:/SFML-2.5.1/include/SFML/Graphics.hpp
@@ -230,21 +230,21 @@ CMakeFiles/sfml_project.dir/GFGame/GFGame.cpp.obj
  C:/SFML-2.5.1/include/SFML/Window/Window.hpp
  C:/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  C:/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
- C:/Users/geoff/sfml_project/GFGame/Background.h
- C:/Users/geoff/sfml_project/GFGame/FinishFlag.h
- C:/Users/geoff/sfml_project/GFGame/GFGame.cpp
- C:/Users/geoff/sfml_project/GFGame/GFGame.h
- C:/Users/geoff/sfml_project/GFGame/Game.h
- C:/Users/geoff/sfml_project/GFGame/GameText.h
- C:/Users/geoff/sfml_project/GFGame/Hearts.h
- C:/Users/geoff/sfml_project/GFGame/LostGameScreen.h
- C:/Users/geoff/sfml_project/GFGame/Map.h
- C:/Users/geoff/sfml_project/GFGame/Monster.h
- C:/Users/geoff/sfml_project/GFGame/MonsterArray.h
- C:/Users/geoff/sfml_project/GFGame/Platform.h
- C:/Users/geoff/sfml_project/GFGame/Player.h
- C:/Users/geoff/sfml_project/GFGame/Thumbnail.h
- C:/Users/geoff/sfml_project/GFGame/WonGameScreen.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Background.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/FinishFlag.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/GFGame.cpp
+ C:/Users/geoff/SFML_Video_Game/GFGame/GFGame.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Game.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/GameText.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Hearts.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/LostGameScreen.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Map.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Monster.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/MonsterArray.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Platform.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Player.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Thumbnail.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/WonGameScreen.h
 CMakeFiles/sfml_project.dir/GFGame/Game.cpp.obj
  C:/SFML-2.5.1/include/SFML/Config.hpp
  C:/SFML-2.5.1/include/SFML/Graphics.hpp
@@ -320,10 +320,10 @@ CMakeFiles/sfml_project.dir/GFGame/Game.cpp.obj
  C:/SFML-2.5.1/include/SFML/Window/Window.hpp
  C:/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  C:/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
- C:/Users/geoff/sfml_project/GFGame/Game.cpp
- C:/Users/geoff/sfml_project/GFGame/Game.h
- C:/Users/geoff/sfml_project/GFGame/GameText.h
- C:/Users/geoff/sfml_project/GFGame/Thumbnail.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Game.cpp
+ C:/Users/geoff/SFML_Video_Game/GFGame/Game.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/GameText.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Thumbnail.h
 CMakeFiles/sfml_project.dir/GFGame/GameText.cpp.obj
  C:/SFML-2.5.1/include/SFML/Config.hpp
  C:/SFML-2.5.1/include/SFML/Graphics.hpp
@@ -399,8 +399,8 @@ CMakeFiles/sfml_project.dir/GFGame/GameText.cpp.obj
  C:/SFML-2.5.1/include/SFML/Window/Window.hpp
  C:/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  C:/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
- C:/Users/geoff/sfml_project/GFGame/GameText.cpp
- C:/Users/geoff/sfml_project/GFGame/GameText.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/GameText.cpp
+ C:/Users/geoff/SFML_Video_Game/GFGame/GameText.h
 CMakeFiles/sfml_project.dir/GFGame/Game_Interface.cpp.obj
  C:/SFML-2.5.1/include/SFML/Config.hpp
  C:/SFML-2.5.1/include/SFML/Graphics.hpp
@@ -476,8 +476,8 @@ CMakeFiles/sfml_project.dir/GFGame/Game_Interface.cpp.obj
  C:/SFML-2.5.1/include/SFML/Window/Window.hpp
  C:/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  C:/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
- C:/Users/geoff/sfml_project/GFGame/Game_Interface.cpp
- C:/Users/geoff/sfml_project/GFGame/Game_Interface.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Game_Interface.cpp
+ C:/Users/geoff/SFML_Video_Game/GFGame/Game_Interface.h
 CMakeFiles/sfml_project.dir/GFGame/Hearts.cpp.obj
  C:/SFML-2.5.1/include/SFML/Config.hpp
  C:/SFML-2.5.1/include/SFML/Graphics.hpp
@@ -553,14 +553,14 @@ CMakeFiles/sfml_project.dir/GFGame/Hearts.cpp.obj
  C:/SFML-2.5.1/include/SFML/Window/Window.hpp
  C:/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  C:/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
- C:/Users/geoff/sfml_project/GFGame/FinishFlag.h
- C:/Users/geoff/sfml_project/GFGame/Hearts.cpp
- C:/Users/geoff/sfml_project/GFGame/Hearts.h
- C:/Users/geoff/sfml_project/GFGame/Map.h
- C:/Users/geoff/sfml_project/GFGame/Monster.h
- C:/Users/geoff/sfml_project/GFGame/MonsterArray.h
- C:/Users/geoff/sfml_project/GFGame/Platform.h
- C:/Users/geoff/sfml_project/GFGame/Player.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/FinishFlag.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Hearts.cpp
+ C:/Users/geoff/SFML_Video_Game/GFGame/Hearts.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Map.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Monster.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/MonsterArray.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Platform.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Player.h
 CMakeFiles/sfml_project.dir/GFGame/LostGameScreen.cpp.obj
  C:/SFML-2.5.1/include/SFML/Config.hpp
  C:/SFML-2.5.1/include/SFML/Graphics.hpp
@@ -636,14 +636,14 @@ CMakeFiles/sfml_project.dir/GFGame/LostGameScreen.cpp.obj
  C:/SFML-2.5.1/include/SFML/Window/Window.hpp
  C:/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  C:/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
- C:/Users/geoff/sfml_project/GFGame/FinishFlag.h
- C:/Users/geoff/sfml_project/GFGame/LostGameScreen.cpp
- C:/Users/geoff/sfml_project/GFGame/LostGameScreen.h
- C:/Users/geoff/sfml_project/GFGame/Map.h
- C:/Users/geoff/sfml_project/GFGame/Monster.h
- C:/Users/geoff/sfml_project/GFGame/MonsterArray.h
- C:/Users/geoff/sfml_project/GFGame/Platform.h
- C:/Users/geoff/sfml_project/GFGame/Player.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/FinishFlag.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/LostGameScreen.cpp
+ C:/Users/geoff/SFML_Video_Game/GFGame/LostGameScreen.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Map.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Monster.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/MonsterArray.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Platform.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Player.h
 CMakeFiles/sfml_project.dir/GFGame/Map.cpp.obj
  C:/SFML-2.5.1/include/SFML/Config.hpp
  C:/SFML-2.5.1/include/SFML/Graphics.hpp
@@ -719,9 +719,9 @@ CMakeFiles/sfml_project.dir/GFGame/Map.cpp.obj
  C:/SFML-2.5.1/include/SFML/Window/Window.hpp
  C:/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  C:/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
- C:/Users/geoff/sfml_project/GFGame/Map.cpp
- C:/Users/geoff/sfml_project/GFGame/Map.h
- C:/Users/geoff/sfml_project/GFGame/Platform.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Map.cpp
+ C:/Users/geoff/SFML_Video_Game/GFGame/Map.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Platform.h
 CMakeFiles/sfml_project.dir/GFGame/Monster.cpp.obj
  C:/SFML-2.5.1/include/SFML/Config.hpp
  C:/SFML-2.5.1/include/SFML/Graphics.hpp
@@ -797,8 +797,8 @@ CMakeFiles/sfml_project.dir/GFGame/Monster.cpp.obj
  C:/SFML-2.5.1/include/SFML/Window/Window.hpp
  C:/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  C:/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
- C:/Users/geoff/sfml_project/GFGame/Monster.cpp
- C:/Users/geoff/sfml_project/GFGame/Monster.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Monster.cpp
+ C:/Users/geoff/SFML_Video_Game/GFGame/Monster.h
 CMakeFiles/sfml_project.dir/GFGame/MonsterArray.cpp.obj
  C:/SFML-2.5.1/include/SFML/Config.hpp
  C:/SFML-2.5.1/include/SFML/Graphics.hpp
@@ -874,9 +874,9 @@ CMakeFiles/sfml_project.dir/GFGame/MonsterArray.cpp.obj
  C:/SFML-2.5.1/include/SFML/Window/Window.hpp
  C:/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  C:/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
- C:/Users/geoff/sfml_project/GFGame/Monster.h
- C:/Users/geoff/sfml_project/GFGame/MonsterArray.cpp
- C:/Users/geoff/sfml_project/GFGame/MonsterArray.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Monster.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/MonsterArray.cpp
+ C:/Users/geoff/SFML_Video_Game/GFGame/MonsterArray.h
 CMakeFiles/sfml_project.dir/GFGame/Platform.cpp.obj
  C:/SFML-2.5.1/include/SFML/Config.hpp
  C:/SFML-2.5.1/include/SFML/Graphics.hpp
@@ -952,8 +952,8 @@ CMakeFiles/sfml_project.dir/GFGame/Platform.cpp.obj
  C:/SFML-2.5.1/include/SFML/Window/Window.hpp
  C:/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  C:/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
- C:/Users/geoff/sfml_project/GFGame/Platform.cpp
- C:/Users/geoff/sfml_project/GFGame/Platform.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Platform.cpp
+ C:/Users/geoff/SFML_Video_Game/GFGame/Platform.h
 CMakeFiles/sfml_project.dir/GFGame/Player.cpp.obj
  C:/SFML-2.5.1/include/SFML/Config.hpp
  C:/SFML-2.5.1/include/SFML/Graphics.hpp
@@ -1029,13 +1029,13 @@ CMakeFiles/sfml_project.dir/GFGame/Player.cpp.obj
  C:/SFML-2.5.1/include/SFML/Window/Window.hpp
  C:/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  C:/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
- C:/Users/geoff/sfml_project/GFGame/FinishFlag.h
- C:/Users/geoff/sfml_project/GFGame/Map.h
- C:/Users/geoff/sfml_project/GFGame/Monster.h
- C:/Users/geoff/sfml_project/GFGame/MonsterArray.h
- C:/Users/geoff/sfml_project/GFGame/Platform.h
- C:/Users/geoff/sfml_project/GFGame/Player.cpp
- C:/Users/geoff/sfml_project/GFGame/Player.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/FinishFlag.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Map.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Monster.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/MonsterArray.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Platform.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Player.cpp
+ C:/Users/geoff/SFML_Video_Game/GFGame/Player.h
 CMakeFiles/sfml_project.dir/GFGame/Thumbnail.cpp.obj
  C:/SFML-2.5.1/include/SFML/Config.hpp
  C:/SFML-2.5.1/include/SFML/Graphics.hpp
@@ -1111,9 +1111,9 @@ CMakeFiles/sfml_project.dir/GFGame/Thumbnail.cpp.obj
  C:/SFML-2.5.1/include/SFML/Window/Window.hpp
  C:/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  C:/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
- C:/Users/geoff/sfml_project/GFGame/GameText.h
- C:/Users/geoff/sfml_project/GFGame/Thumbnail.cpp
- C:/Users/geoff/sfml_project/GFGame/Thumbnail.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/GameText.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Thumbnail.cpp
+ C:/Users/geoff/SFML_Video_Game/GFGame/Thumbnail.h
 CMakeFiles/sfml_project.dir/GFGame/WonGameScreen.cpp.obj
  C:/SFML-2.5.1/include/SFML/Config.hpp
  C:/SFML-2.5.1/include/SFML/Graphics.hpp
@@ -1189,14 +1189,14 @@ CMakeFiles/sfml_project.dir/GFGame/WonGameScreen.cpp.obj
  C:/SFML-2.5.1/include/SFML/Window/Window.hpp
  C:/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  C:/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
- C:/Users/geoff/sfml_project/GFGame/FinishFlag.h
- C:/Users/geoff/sfml_project/GFGame/Map.h
- C:/Users/geoff/sfml_project/GFGame/Monster.h
- C:/Users/geoff/sfml_project/GFGame/MonsterArray.h
- C:/Users/geoff/sfml_project/GFGame/Platform.h
- C:/Users/geoff/sfml_project/GFGame/Player.h
- C:/Users/geoff/sfml_project/GFGame/WonGameScreen.cpp
- C:/Users/geoff/sfml_project/GFGame/WonGameScreen.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/FinishFlag.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Map.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Monster.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/MonsterArray.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Platform.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Player.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/WonGameScreen.cpp
+ C:/Users/geoff/SFML_Video_Game/GFGame/WonGameScreen.h
 CMakeFiles/sfml_project.dir/main.cpp.obj
  C:/SFML-2.5.1/include/SFML/Config.hpp
  C:/SFML-2.5.1/include/SFML/Graphics.hpp
@@ -1272,18 +1272,18 @@ CMakeFiles/sfml_project.dir/main.cpp.obj
  C:/SFML-2.5.1/include/SFML/Window/Window.hpp
  C:/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  C:/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
- C:/Users/geoff/sfml_project/GFGame/Background.h
- C:/Users/geoff/sfml_project/GFGame/FinishFlag.h
- C:/Users/geoff/sfml_project/GFGame/GFGame.h
- C:/Users/geoff/sfml_project/GFGame/Game.h
- C:/Users/geoff/sfml_project/GFGame/GameText.h
- C:/Users/geoff/sfml_project/GFGame/Hearts.h
- C:/Users/geoff/sfml_project/GFGame/LostGameScreen.h
- C:/Users/geoff/sfml_project/GFGame/Map.h
- C:/Users/geoff/sfml_project/GFGame/Monster.h
- C:/Users/geoff/sfml_project/GFGame/MonsterArray.h
- C:/Users/geoff/sfml_project/GFGame/Platform.h
- C:/Users/geoff/sfml_project/GFGame/Player.h
- C:/Users/geoff/sfml_project/GFGame/Thumbnail.h
- C:/Users/geoff/sfml_project/GFGame/WonGameScreen.h
- C:/Users/geoff/sfml_project/main.cpp
+ C:/Users/geoff/SFML_Video_Game/GFGame/Background.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/FinishFlag.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/GFGame.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Game.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/GameText.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Hearts.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/LostGameScreen.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Map.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Monster.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/MonsterArray.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Platform.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Player.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/Thumbnail.h
+ C:/Users/geoff/SFML_Video_Game/GFGame/WonGameScreen.h
+ C:/Users/geoff/SFML_Video_Game/main.cpp

@@ -42,10 +42,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\geoff\sfml_project
+CMAKE_SOURCE_DIR = C:\Users\geoff\SFML_Video_Game
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\geoff\sfml_project\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\geoff\SFML_Video_Game\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/sfml_project.dir/depend.make
@@ -59,226 +59,226 @@ include CMakeFiles/sfml_project.dir/flags.make
 CMakeFiles/sfml_project.dir/main.cpp.obj: CMakeFiles/sfml_project.dir/flags.make
 CMakeFiles/sfml_project.dir/main.cpp.obj: CMakeFiles/sfml_project.dir/includes_CXX.rsp
 CMakeFiles/sfml_project.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\geoff\sfml_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sfml_project.dir/main.cpp.obj"
-	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml_project.dir\main.cpp.obj -c C:\Users\geoff\sfml_project\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\geoff\SFML_Video_Game\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sfml_project.dir/main.cpp.obj"
+	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml_project.dir\main.cpp.obj -c C:\Users\geoff\SFML_Video_Game\main.cpp
 
 CMakeFiles/sfml_project.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml_project.dir/main.cpp.i"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\geoff\sfml_project\main.cpp > CMakeFiles\sfml_project.dir\main.cpp.i
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\geoff\SFML_Video_Game\main.cpp > CMakeFiles\sfml_project.dir\main.cpp.i
 
 CMakeFiles/sfml_project.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml_project.dir/main.cpp.s"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\geoff\sfml_project\main.cpp -o CMakeFiles\sfml_project.dir\main.cpp.s
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\geoff\SFML_Video_Game\main.cpp -o CMakeFiles\sfml_project.dir\main.cpp.s
 
 CMakeFiles/sfml_project.dir/GFGame/Game.cpp.obj: CMakeFiles/sfml_project.dir/flags.make
 CMakeFiles/sfml_project.dir/GFGame/Game.cpp.obj: CMakeFiles/sfml_project.dir/includes_CXX.rsp
 CMakeFiles/sfml_project.dir/GFGame/Game.cpp.obj: ../GFGame/Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\geoff\sfml_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sfml_project.dir/GFGame/Game.cpp.obj"
-	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml_project.dir\GFGame\Game.cpp.obj -c C:\Users\geoff\sfml_project\GFGame\Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\geoff\SFML_Video_Game\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sfml_project.dir/GFGame/Game.cpp.obj"
+	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml_project.dir\GFGame\Game.cpp.obj -c C:\Users\geoff\SFML_Video_Game\GFGame\Game.cpp
 
 CMakeFiles/sfml_project.dir/GFGame/Game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml_project.dir/GFGame/Game.cpp.i"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\geoff\sfml_project\GFGame\Game.cpp > CMakeFiles\sfml_project.dir\GFGame\Game.cpp.i
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\geoff\SFML_Video_Game\GFGame\Game.cpp > CMakeFiles\sfml_project.dir\GFGame\Game.cpp.i
 
 CMakeFiles/sfml_project.dir/GFGame/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml_project.dir/GFGame/Game.cpp.s"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\geoff\sfml_project\GFGame\Game.cpp -o CMakeFiles\sfml_project.dir\GFGame\Game.cpp.s
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\geoff\SFML_Video_Game\GFGame\Game.cpp -o CMakeFiles\sfml_project.dir\GFGame\Game.cpp.s
 
 CMakeFiles/sfml_project.dir/GFGame/GameText.cpp.obj: CMakeFiles/sfml_project.dir/flags.make
 CMakeFiles/sfml_project.dir/GFGame/GameText.cpp.obj: CMakeFiles/sfml_project.dir/includes_CXX.rsp
 CMakeFiles/sfml_project.dir/GFGame/GameText.cpp.obj: ../GFGame/GameText.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\geoff\sfml_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/sfml_project.dir/GFGame/GameText.cpp.obj"
-	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml_project.dir\GFGame\GameText.cpp.obj -c C:\Users\geoff\sfml_project\GFGame\GameText.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\geoff\SFML_Video_Game\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/sfml_project.dir/GFGame/GameText.cpp.obj"
+	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml_project.dir\GFGame\GameText.cpp.obj -c C:\Users\geoff\SFML_Video_Game\GFGame\GameText.cpp
 
 CMakeFiles/sfml_project.dir/GFGame/GameText.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml_project.dir/GFGame/GameText.cpp.i"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\geoff\sfml_project\GFGame\GameText.cpp > CMakeFiles\sfml_project.dir\GFGame\GameText.cpp.i
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\geoff\SFML_Video_Game\GFGame\GameText.cpp > CMakeFiles\sfml_project.dir\GFGame\GameText.cpp.i
 
 CMakeFiles/sfml_project.dir/GFGame/GameText.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml_project.dir/GFGame/GameText.cpp.s"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\geoff\sfml_project\GFGame\GameText.cpp -o CMakeFiles\sfml_project.dir\GFGame\GameText.cpp.s
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\geoff\SFML_Video_Game\GFGame\GameText.cpp -o CMakeFiles\sfml_project.dir\GFGame\GameText.cpp.s
 
 CMakeFiles/sfml_project.dir/GFGame/Game_Interface.cpp.obj: CMakeFiles/sfml_project.dir/flags.make
 CMakeFiles/sfml_project.dir/GFGame/Game_Interface.cpp.obj: CMakeFiles/sfml_project.dir/includes_CXX.rsp
 CMakeFiles/sfml_project.dir/GFGame/Game_Interface.cpp.obj: ../GFGame/Game_Interface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\geoff\sfml_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/sfml_project.dir/GFGame/Game_Interface.cpp.obj"
-	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml_project.dir\GFGame\Game_Interface.cpp.obj -c C:\Users\geoff\sfml_project\GFGame\Game_Interface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\geoff\SFML_Video_Game\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/sfml_project.dir/GFGame/Game_Interface.cpp.obj"
+	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml_project.dir\GFGame\Game_Interface.cpp.obj -c C:\Users\geoff\SFML_Video_Game\GFGame\Game_Interface.cpp
 
 CMakeFiles/sfml_project.dir/GFGame/Game_Interface.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml_project.dir/GFGame/Game_Interface.cpp.i"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\geoff\sfml_project\GFGame\Game_Interface.cpp > CMakeFiles\sfml_project.dir\GFGame\Game_Interface.cpp.i
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\geoff\SFML_Video_Game\GFGame\Game_Interface.cpp > CMakeFiles\sfml_project.dir\GFGame\Game_Interface.cpp.i
 
 CMakeFiles/sfml_project.dir/GFGame/Game_Interface.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml_project.dir/GFGame/Game_Interface.cpp.s"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\geoff\sfml_project\GFGame\Game_Interface.cpp -o CMakeFiles\sfml_project.dir\GFGame\Game_Interface.cpp.s
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\geoff\SFML_Video_Game\GFGame\Game_Interface.cpp -o CMakeFiles\sfml_project.dir\GFGame\Game_Interface.cpp.s
 
 CMakeFiles/sfml_project.dir/GFGame/Thumbnail.cpp.obj: CMakeFiles/sfml_project.dir/flags.make
 CMakeFiles/sfml_project.dir/GFGame/Thumbnail.cpp.obj: CMakeFiles/sfml_project.dir/includes_CXX.rsp
 CMakeFiles/sfml_project.dir/GFGame/Thumbnail.cpp.obj: ../GFGame/Thumbnail.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\geoff\sfml_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/sfml_project.dir/GFGame/Thumbnail.cpp.obj"
-	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml_project.dir\GFGame\Thumbnail.cpp.obj -c C:\Users\geoff\sfml_project\GFGame\Thumbnail.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\geoff\SFML_Video_Game\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/sfml_project.dir/GFGame/Thumbnail.cpp.obj"
+	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml_project.dir\GFGame\Thumbnail.cpp.obj -c C:\Users\geoff\SFML_Video_Game\GFGame\Thumbnail.cpp
 
 CMakeFiles/sfml_project.dir/GFGame/Thumbnail.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml_project.dir/GFGame/Thumbnail.cpp.i"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\geoff\sfml_project\GFGame\Thumbnail.cpp > CMakeFiles\sfml_project.dir\GFGame\Thumbnail.cpp.i
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\geoff\SFML_Video_Game\GFGame\Thumbnail.cpp > CMakeFiles\sfml_project.dir\GFGame\Thumbnail.cpp.i
 
 CMakeFiles/sfml_project.dir/GFGame/Thumbnail.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml_project.dir/GFGame/Thumbnail.cpp.s"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\geoff\sfml_project\GFGame\Thumbnail.cpp -o CMakeFiles\sfml_project.dir\GFGame\Thumbnail.cpp.s
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\geoff\SFML_Video_Game\GFGame\Thumbnail.cpp -o CMakeFiles\sfml_project.dir\GFGame\Thumbnail.cpp.s
 
 CMakeFiles/sfml_project.dir/GFGame/GFGame.cpp.obj: CMakeFiles/sfml_project.dir/flags.make
 CMakeFiles/sfml_project.dir/GFGame/GFGame.cpp.obj: CMakeFiles/sfml_project.dir/includes_CXX.rsp
 CMakeFiles/sfml_project.dir/GFGame/GFGame.cpp.obj: ../GFGame/GFGame.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\geoff\sfml_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/sfml_project.dir/GFGame/GFGame.cpp.obj"
-	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml_project.dir\GFGame\GFGame.cpp.obj -c C:\Users\geoff\sfml_project\GFGame\GFGame.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\geoff\SFML_Video_Game\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/sfml_project.dir/GFGame/GFGame.cpp.obj"
+	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml_project.dir\GFGame\GFGame.cpp.obj -c C:\Users\geoff\SFML_Video_Game\GFGame\GFGame.cpp
 
 CMakeFiles/sfml_project.dir/GFGame/GFGame.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml_project.dir/GFGame/GFGame.cpp.i"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\geoff\sfml_project\GFGame\GFGame.cpp > CMakeFiles\sfml_project.dir\GFGame\GFGame.cpp.i
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\geoff\SFML_Video_Game\GFGame\GFGame.cpp > CMakeFiles\sfml_project.dir\GFGame\GFGame.cpp.i
 
 CMakeFiles/sfml_project.dir/GFGame/GFGame.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml_project.dir/GFGame/GFGame.cpp.s"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\geoff\sfml_project\GFGame\GFGame.cpp -o CMakeFiles\sfml_project.dir\GFGame\GFGame.cpp.s
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\geoff\SFML_Video_Game\GFGame\GFGame.cpp -o CMakeFiles\sfml_project.dir\GFGame\GFGame.cpp.s
 
 CMakeFiles/sfml_project.dir/GFGame/Player.cpp.obj: CMakeFiles/sfml_project.dir/flags.make
 CMakeFiles/sfml_project.dir/GFGame/Player.cpp.obj: CMakeFiles/sfml_project.dir/includes_CXX.rsp
 CMakeFiles/sfml_project.dir/GFGame/Player.cpp.obj: ../GFGame/Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\geoff\sfml_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/sfml_project.dir/GFGame/Player.cpp.obj"
-	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml_project.dir\GFGame\Player.cpp.obj -c C:\Users\geoff\sfml_project\GFGame\Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\geoff\SFML_Video_Game\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/sfml_project.dir/GFGame/Player.cpp.obj"
+	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml_project.dir\GFGame\Player.cpp.obj -c C:\Users\geoff\SFML_Video_Game\GFGame\Player.cpp
 
 CMakeFiles/sfml_project.dir/GFGame/Player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml_project.dir/GFGame/Player.cpp.i"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\geoff\sfml_project\GFGame\Player.cpp > CMakeFiles\sfml_project.dir\GFGame\Player.cpp.i
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\geoff\SFML_Video_Game\GFGame\Player.cpp > CMakeFiles\sfml_project.dir\GFGame\Player.cpp.i
 
 CMakeFiles/sfml_project.dir/GFGame/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml_project.dir/GFGame/Player.cpp.s"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\geoff\sfml_project\GFGame\Player.cpp -o CMakeFiles\sfml_project.dir\GFGame\Player.cpp.s
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\geoff\SFML_Video_Game\GFGame\Player.cpp -o CMakeFiles\sfml_project.dir\GFGame\Player.cpp.s
 
 CMakeFiles/sfml_project.dir/GFGame/Platform.cpp.obj: CMakeFiles/sfml_project.dir/flags.make
 CMakeFiles/sfml_project.dir/GFGame/Platform.cpp.obj: CMakeFiles/sfml_project.dir/includes_CXX.rsp
 CMakeFiles/sfml_project.dir/GFGame/Platform.cpp.obj: ../GFGame/Platform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\geoff\sfml_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/sfml_project.dir/GFGame/Platform.cpp.obj"
-	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml_project.dir\GFGame\Platform.cpp.obj -c C:\Users\geoff\sfml_project\GFGame\Platform.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\geoff\SFML_Video_Game\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/sfml_project.dir/GFGame/Platform.cpp.obj"
+	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml_project.dir\GFGame\Platform.cpp.obj -c C:\Users\geoff\SFML_Video_Game\GFGame\Platform.cpp
 
 CMakeFiles/sfml_project.dir/GFGame/Platform.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml_project.dir/GFGame/Platform.cpp.i"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\geoff\sfml_project\GFGame\Platform.cpp > CMakeFiles\sfml_project.dir\GFGame\Platform.cpp.i
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\geoff\SFML_Video_Game\GFGame\Platform.cpp > CMakeFiles\sfml_project.dir\GFGame\Platform.cpp.i
 
 CMakeFiles/sfml_project.dir/GFGame/Platform.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml_project.dir/GFGame/Platform.cpp.s"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\geoff\sfml_project\GFGame\Platform.cpp -o CMakeFiles\sfml_project.dir\GFGame\Platform.cpp.s
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\geoff\SFML_Video_Game\GFGame\Platform.cpp -o CMakeFiles\sfml_project.dir\GFGame\Platform.cpp.s
 
 CMakeFiles/sfml_project.dir/GFGame/Background.cpp.obj: CMakeFiles/sfml_project.dir/flags.make
 CMakeFiles/sfml_project.dir/GFGame/Background.cpp.obj: CMakeFiles/sfml_project.dir/includes_CXX.rsp
 CMakeFiles/sfml_project.dir/GFGame/Background.cpp.obj: ../GFGame/Background.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\geoff\sfml_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/sfml_project.dir/GFGame/Background.cpp.obj"
-	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml_project.dir\GFGame\Background.cpp.obj -c C:\Users\geoff\sfml_project\GFGame\Background.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\geoff\SFML_Video_Game\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/sfml_project.dir/GFGame/Background.cpp.obj"
+	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml_project.dir\GFGame\Background.cpp.obj -c C:\Users\geoff\SFML_Video_Game\GFGame\Background.cpp
 
 CMakeFiles/sfml_project.dir/GFGame/Background.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml_project.dir/GFGame/Background.cpp.i"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\geoff\sfml_project\GFGame\Background.cpp > CMakeFiles\sfml_project.dir\GFGame\Background.cpp.i
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\geoff\SFML_Video_Game\GFGame\Background.cpp > CMakeFiles\sfml_project.dir\GFGame\Background.cpp.i
 
 CMakeFiles/sfml_project.dir/GFGame/Background.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml_project.dir/GFGame/Background.cpp.s"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\geoff\sfml_project\GFGame\Background.cpp -o CMakeFiles\sfml_project.dir\GFGame\Background.cpp.s
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\geoff\SFML_Video_Game\GFGame\Background.cpp -o CMakeFiles\sfml_project.dir\GFGame\Background.cpp.s
 
 CMakeFiles/sfml_project.dir/GFGame/Map.cpp.obj: CMakeFiles/sfml_project.dir/flags.make
 CMakeFiles/sfml_project.dir/GFGame/Map.cpp.obj: CMakeFiles/sfml_project.dir/includes_CXX.rsp
 CMakeFiles/sfml_project.dir/GFGame/Map.cpp.obj: ../GFGame/Map.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\geoff\sfml_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/sfml_project.dir/GFGame/Map.cpp.obj"
-	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml_project.dir\GFGame\Map.cpp.obj -c C:\Users\geoff\sfml_project\GFGame\Map.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\geoff\SFML_Video_Game\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/sfml_project.dir/GFGame/Map.cpp.obj"
+	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml_project.dir\GFGame\Map.cpp.obj -c C:\Users\geoff\SFML_Video_Game\GFGame\Map.cpp
 
 CMakeFiles/sfml_project.dir/GFGame/Map.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml_project.dir/GFGame/Map.cpp.i"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\geoff\sfml_project\GFGame\Map.cpp > CMakeFiles\sfml_project.dir\GFGame\Map.cpp.i
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\geoff\SFML_Video_Game\GFGame\Map.cpp > CMakeFiles\sfml_project.dir\GFGame\Map.cpp.i
 
 CMakeFiles/sfml_project.dir/GFGame/Map.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml_project.dir/GFGame/Map.cpp.s"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\geoff\sfml_project\GFGame\Map.cpp -o CMakeFiles\sfml_project.dir\GFGame\Map.cpp.s
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\geoff\SFML_Video_Game\GFGame\Map.cpp -o CMakeFiles\sfml_project.dir\GFGame\Map.cpp.s
 
 CMakeFiles/sfml_project.dir/GFGame/Monster.cpp.obj: CMakeFiles/sfml_project.dir/flags.make
 CMakeFiles/sfml_project.dir/GFGame/Monster.cpp.obj: CMakeFiles/sfml_project.dir/includes_CXX.rsp
 CMakeFiles/sfml_project.dir/GFGame/Monster.cpp.obj: ../GFGame/Monster.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\geoff\sfml_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/sfml_project.dir/GFGame/Monster.cpp.obj"
-	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml_project.dir\GFGame\Monster.cpp.obj -c C:\Users\geoff\sfml_project\GFGame\Monster.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\geoff\SFML_Video_Game\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/sfml_project.dir/GFGame/Monster.cpp.obj"
+	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml_project.dir\GFGame\Monster.cpp.obj -c C:\Users\geoff\SFML_Video_Game\GFGame\Monster.cpp
 
 CMakeFiles/sfml_project.dir/GFGame/Monster.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml_project.dir/GFGame/Monster.cpp.i"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\geoff\sfml_project\GFGame\Monster.cpp > CMakeFiles\sfml_project.dir\GFGame\Monster.cpp.i
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\geoff\SFML_Video_Game\GFGame\Monster.cpp > CMakeFiles\sfml_project.dir\GFGame\Monster.cpp.i
 
 CMakeFiles/sfml_project.dir/GFGame/Monster.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml_project.dir/GFGame/Monster.cpp.s"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\geoff\sfml_project\GFGame\Monster.cpp -o CMakeFiles\sfml_project.dir\GFGame\Monster.cpp.s
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\geoff\SFML_Video_Game\GFGame\Monster.cpp -o CMakeFiles\sfml_project.dir\GFGame\Monster.cpp.s
 
 CMakeFiles/sfml_project.dir/GFGame/Hearts.cpp.obj: CMakeFiles/sfml_project.dir/flags.make
 CMakeFiles/sfml_project.dir/GFGame/Hearts.cpp.obj: CMakeFiles/sfml_project.dir/includes_CXX.rsp
 CMakeFiles/sfml_project.dir/GFGame/Hearts.cpp.obj: ../GFGame/Hearts.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\geoff\sfml_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/sfml_project.dir/GFGame/Hearts.cpp.obj"
-	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml_project.dir\GFGame\Hearts.cpp.obj -c C:\Users\geoff\sfml_project\GFGame\Hearts.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\geoff\SFML_Video_Game\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/sfml_project.dir/GFGame/Hearts.cpp.obj"
+	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml_project.dir\GFGame\Hearts.cpp.obj -c C:\Users\geoff\SFML_Video_Game\GFGame\Hearts.cpp
 
 CMakeFiles/sfml_project.dir/GFGame/Hearts.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml_project.dir/GFGame/Hearts.cpp.i"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\geoff\sfml_project\GFGame\Hearts.cpp > CMakeFiles\sfml_project.dir\GFGame\Hearts.cpp.i
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\geoff\SFML_Video_Game\GFGame\Hearts.cpp > CMakeFiles\sfml_project.dir\GFGame\Hearts.cpp.i
 
 CMakeFiles/sfml_project.dir/GFGame/Hearts.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml_project.dir/GFGame/Hearts.cpp.s"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\geoff\sfml_project\GFGame\Hearts.cpp -o CMakeFiles\sfml_project.dir\GFGame\Hearts.cpp.s
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\geoff\SFML_Video_Game\GFGame\Hearts.cpp -o CMakeFiles\sfml_project.dir\GFGame\Hearts.cpp.s
 
 CMakeFiles/sfml_project.dir/GFGame/MonsterArray.cpp.obj: CMakeFiles/sfml_project.dir/flags.make
 CMakeFiles/sfml_project.dir/GFGame/MonsterArray.cpp.obj: CMakeFiles/sfml_project.dir/includes_CXX.rsp
 CMakeFiles/sfml_project.dir/GFGame/MonsterArray.cpp.obj: ../GFGame/MonsterArray.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\geoff\sfml_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/sfml_project.dir/GFGame/MonsterArray.cpp.obj"
-	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml_project.dir\GFGame\MonsterArray.cpp.obj -c C:\Users\geoff\sfml_project\GFGame\MonsterArray.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\geoff\SFML_Video_Game\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/sfml_project.dir/GFGame/MonsterArray.cpp.obj"
+	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml_project.dir\GFGame\MonsterArray.cpp.obj -c C:\Users\geoff\SFML_Video_Game\GFGame\MonsterArray.cpp
 
 CMakeFiles/sfml_project.dir/GFGame/MonsterArray.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml_project.dir/GFGame/MonsterArray.cpp.i"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\geoff\sfml_project\GFGame\MonsterArray.cpp > CMakeFiles\sfml_project.dir\GFGame\MonsterArray.cpp.i
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\geoff\SFML_Video_Game\GFGame\MonsterArray.cpp > CMakeFiles\sfml_project.dir\GFGame\MonsterArray.cpp.i
 
 CMakeFiles/sfml_project.dir/GFGame/MonsterArray.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml_project.dir/GFGame/MonsterArray.cpp.s"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\geoff\sfml_project\GFGame\MonsterArray.cpp -o CMakeFiles\sfml_project.dir\GFGame\MonsterArray.cpp.s
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\geoff\SFML_Video_Game\GFGame\MonsterArray.cpp -o CMakeFiles\sfml_project.dir\GFGame\MonsterArray.cpp.s
 
 CMakeFiles/sfml_project.dir/GFGame/FinishFlag.cpp.obj: CMakeFiles/sfml_project.dir/flags.make
 CMakeFiles/sfml_project.dir/GFGame/FinishFlag.cpp.obj: CMakeFiles/sfml_project.dir/includes_CXX.rsp
 CMakeFiles/sfml_project.dir/GFGame/FinishFlag.cpp.obj: ../GFGame/FinishFlag.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\geoff\sfml_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/sfml_project.dir/GFGame/FinishFlag.cpp.obj"
-	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml_project.dir\GFGame\FinishFlag.cpp.obj -c C:\Users\geoff\sfml_project\GFGame\FinishFlag.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\geoff\SFML_Video_Game\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/sfml_project.dir/GFGame/FinishFlag.cpp.obj"
+	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml_project.dir\GFGame\FinishFlag.cpp.obj -c C:\Users\geoff\SFML_Video_Game\GFGame\FinishFlag.cpp
 
 CMakeFiles/sfml_project.dir/GFGame/FinishFlag.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml_project.dir/GFGame/FinishFlag.cpp.i"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\geoff\sfml_project\GFGame\FinishFlag.cpp > CMakeFiles\sfml_project.dir\GFGame\FinishFlag.cpp.i
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\geoff\SFML_Video_Game\GFGame\FinishFlag.cpp > CMakeFiles\sfml_project.dir\GFGame\FinishFlag.cpp.i
 
 CMakeFiles/sfml_project.dir/GFGame/FinishFlag.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml_project.dir/GFGame/FinishFlag.cpp.s"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\geoff\sfml_project\GFGame\FinishFlag.cpp -o CMakeFiles\sfml_project.dir\GFGame\FinishFlag.cpp.s
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\geoff\SFML_Video_Game\GFGame\FinishFlag.cpp -o CMakeFiles\sfml_project.dir\GFGame\FinishFlag.cpp.s
 
 CMakeFiles/sfml_project.dir/GFGame/WonGameScreen.cpp.obj: CMakeFiles/sfml_project.dir/flags.make
 CMakeFiles/sfml_project.dir/GFGame/WonGameScreen.cpp.obj: CMakeFiles/sfml_project.dir/includes_CXX.rsp
 CMakeFiles/sfml_project.dir/GFGame/WonGameScreen.cpp.obj: ../GFGame/WonGameScreen.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\geoff\sfml_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/sfml_project.dir/GFGame/WonGameScreen.cpp.obj"
-	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml_project.dir\GFGame\WonGameScreen.cpp.obj -c C:\Users\geoff\sfml_project\GFGame\WonGameScreen.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\geoff\SFML_Video_Game\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/sfml_project.dir/GFGame/WonGameScreen.cpp.obj"
+	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml_project.dir\GFGame\WonGameScreen.cpp.obj -c C:\Users\geoff\SFML_Video_Game\GFGame\WonGameScreen.cpp
 
 CMakeFiles/sfml_project.dir/GFGame/WonGameScreen.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml_project.dir/GFGame/WonGameScreen.cpp.i"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\geoff\sfml_project\GFGame\WonGameScreen.cpp > CMakeFiles\sfml_project.dir\GFGame\WonGameScreen.cpp.i
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\geoff\SFML_Video_Game\GFGame\WonGameScreen.cpp > CMakeFiles\sfml_project.dir\GFGame\WonGameScreen.cpp.i
 
 CMakeFiles/sfml_project.dir/GFGame/WonGameScreen.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml_project.dir/GFGame/WonGameScreen.cpp.s"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\geoff\sfml_project\GFGame\WonGameScreen.cpp -o CMakeFiles\sfml_project.dir\GFGame\WonGameScreen.cpp.s
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\geoff\SFML_Video_Game\GFGame\WonGameScreen.cpp -o CMakeFiles\sfml_project.dir\GFGame\WonGameScreen.cpp.s
 
 CMakeFiles/sfml_project.dir/GFGame/LostGameScreen.cpp.obj: CMakeFiles/sfml_project.dir/flags.make
 CMakeFiles/sfml_project.dir/GFGame/LostGameScreen.cpp.obj: CMakeFiles/sfml_project.dir/includes_CXX.rsp
 CMakeFiles/sfml_project.dir/GFGame/LostGameScreen.cpp.obj: ../GFGame/LostGameScreen.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\geoff\sfml_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/sfml_project.dir/GFGame/LostGameScreen.cpp.obj"
-	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml_project.dir\GFGame\LostGameScreen.cpp.obj -c C:\Users\geoff\sfml_project\GFGame\LostGameScreen.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\geoff\SFML_Video_Game\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/sfml_project.dir/GFGame/LostGameScreen.cpp.obj"
+	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml_project.dir\GFGame\LostGameScreen.cpp.obj -c C:\Users\geoff\SFML_Video_Game\GFGame\LostGameScreen.cpp
 
 CMakeFiles/sfml_project.dir/GFGame/LostGameScreen.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml_project.dir/GFGame/LostGameScreen.cpp.i"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\geoff\sfml_project\GFGame\LostGameScreen.cpp > CMakeFiles\sfml_project.dir\GFGame\LostGameScreen.cpp.i
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\geoff\SFML_Video_Game\GFGame\LostGameScreen.cpp > CMakeFiles\sfml_project.dir\GFGame\LostGameScreen.cpp.i
 
 CMakeFiles/sfml_project.dir/GFGame/LostGameScreen.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml_project.dir/GFGame/LostGameScreen.cpp.s"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\geoff\sfml_project\GFGame\LostGameScreen.cpp -o CMakeFiles\sfml_project.dir\GFGame\LostGameScreen.cpp.s
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\geoff\SFML_Video_Game\GFGame\LostGameScreen.cpp -o CMakeFiles\sfml_project.dir\GFGame\LostGameScreen.cpp.s
 
 # Object files for target sfml_project
 sfml_project_OBJECTS = \
@@ -339,7 +339,7 @@ sfml_project.exe: C:/SFML-2.5.1/lib/libogg.a
 sfml_project.exe: CMakeFiles/sfml_project.dir/linklibs.rsp
 sfml_project.exe: CMakeFiles/sfml_project.dir/objects1.rsp
 sfml_project.exe: CMakeFiles/sfml_project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\geoff\sfml_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable sfml_project.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\geoff\SFML_Video_Game\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable sfml_project.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\sfml_project.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -352,6 +352,6 @@ CMakeFiles/sfml_project.dir/clean:
 .PHONY : CMakeFiles/sfml_project.dir/clean
 
 CMakeFiles/sfml_project.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\geoff\sfml_project C:\Users\geoff\sfml_project C:\Users\geoff\sfml_project\cmake-build-debug C:\Users\geoff\sfml_project\cmake-build-debug C:\Users\geoff\sfml_project\cmake-build-debug\CMakeFiles\sfml_project.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\geoff\SFML_Video_Game C:\Users\geoff\SFML_Video_Game C:\Users\geoff\SFML_Video_Game\cmake-build-debug C:\Users\geoff\SFML_Video_Game\cmake-build-debug C:\Users\geoff\SFML_Video_Game\cmake-build-debug\CMakeFiles\sfml_project.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/sfml_project.dir/depend
 
