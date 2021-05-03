@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>Map.cpp</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #bbb529;}
+.s3 { color: #6a8759;}
+.s4 { color: #cc7832;}
+.s5 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Map.cpp</font>
+</center></td></tr></table>
+<pre><span class="s0">//</span>
+<span class="s0">// Created by geoff on 5/28/2020.</span>
+<span class="s0">//</span>
+
+<span class="s2">#include </span><span class="s3">&quot;Map.h&quot;</span>
+
+<span class="s4">void </span><span class="s1">Map::addPlatform(</span><span class="s4">float </span><span class="s1">x</span><span class="s4">, float </span><span class="s1">y) {</span>
+    <span class="s1">platforms.push_back(</span><span class="s4">new </span><span class="s1">Platform(x</span><span class="s4">, </span><span class="s1">y))</span><span class="s4">;</span>
+<span class="s1">}</span>
+
+<span class="s1">Map::Map() {</span>
+    <span class="s0">//Stage 1</span>
+    <span class="s4">for </span><span class="s1">(</span><span class="s4">int </span><span class="s1">i = </span><span class="s5">960</span><span class="s4">; </span><span class="s1">i &lt; </span><span class="s5">6720</span><span class="s4">; </span><span class="s1">i+=</span><span class="s5">75</span><span class="s1">)</span>
+        <span class="s4">this</span><span class="s1">-&gt;addPlatform(i</span><span class="s4">,</span><span class="s5">1545</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s4">for </span><span class="s1">(</span><span class="s4">int </span><span class="s1">i = </span><span class="s5">1410</span><span class="s4">; </span><span class="s1">i &lt; </span><span class="s5">1710</span><span class="s4">; </span><span class="s1">i +=</span><span class="s5">75</span><span class="s1">)</span>
+        <span class="s4">this</span><span class="s1">-&gt;addPlatform(i</span><span class="s4">,</span><span class="s5">1350</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s4">for </span><span class="s1">(</span><span class="s4">int </span><span class="s1">i = </span><span class="s5">1975</span><span class="s4">; </span><span class="s1">i &lt; </span><span class="s5">2275</span><span class="s4">; </span><span class="s1">i += </span><span class="s5">75</span><span class="s1">)</span>
+        <span class="s4">this</span><span class="s1">-&gt;addPlatform(i</span><span class="s4">,</span><span class="s5">1350</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s4">for </span><span class="s1">(</span><span class="s4">int </span><span class="s1">i = </span><span class="s5">1750</span><span class="s4">; </span><span class="s1">i &lt; </span><span class="s5">1900</span><span class="s4">; </span><span class="s1">i += </span><span class="s5">75</span><span class="s1">)</span>
+        <span class="s4">this</span><span class="s1">-&gt;addPlatform(i</span><span class="s4">, </span><span class="s5">1150</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s4">for </span><span class="s1">(</span><span class="s4">int </span><span class="s1">i = </span><span class="s5">2125</span><span class="s4">; </span><span class="s1">i &lt; </span><span class="s5">2275</span><span class="s4">; </span><span class="s1">i += </span><span class="s5">75</span><span class="s1">)</span>
+        <span class="s4">this</span><span class="s1">-&gt;addPlatform(i</span><span class="s4">, </span><span class="s5">950</span><span class="s1">)</span><span class="s4">;</span>
+
+    <span class="s0">//Stage 2 Separator</span>
+    <span class="s4">for </span><span class="s1">(</span><span class="s4">int </span><span class="s1">x = </span><span class="s5">2500</span><span class="s4">; </span><span class="s1">x &lt;= </span><span class="s5">2800</span><span class="s4">; </span><span class="s1">x += </span><span class="s5">75</span><span class="s1">)</span>
+        <span class="s4">for</span><span class="s1">(</span><span class="s4">int </span><span class="s1">y = </span><span class="s5">1545</span><span class="s4">; </span><span class="s1">y &gt;= </span><span class="s5">1095</span><span class="s4">; </span><span class="s1">y -= </span><span class="s5">75</span><span class="s1">)</span>
+            <span class="s4">this</span><span class="s1">-&gt;addPlatform(x</span><span class="s4">, </span><span class="s1">y)</span><span class="s4">;</span>
+    <span class="s4">for</span><span class="s1">(</span><span class="s4">int </span><span class="s1">i = </span><span class="s5">1545</span><span class="s4">; </span><span class="s1">i &gt;= </span><span class="s5">1320</span><span class="s4">; </span><span class="s1">i -= </span><span class="s5">75</span><span class="s1">)</span>
+        <span class="s4">this</span><span class="s1">-&gt;addPlatform(</span><span class="s5">2875</span><span class="s4">,</span><span class="s1">i)</span><span class="s4">;</span>
+
+    <span class="s0">//Stage 2</span>
+    <span class="s4">for </span><span class="s1">(</span><span class="s4">int </span><span class="s1">i = </span><span class="s5">3000</span><span class="s4">; </span><span class="s1">i &lt;= </span><span class="s5">3200</span><span class="s4">; </span><span class="s1">i += </span><span class="s5">75</span><span class="s1">)</span>
+        <span class="s4">this</span><span class="s1">-&gt;addPlatform(i</span><span class="s4">,</span><span class="s5">900</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s4">for </span><span class="s1">(</span><span class="s4">int </span><span class="s1">i = </span><span class="s5">3600</span><span class="s4">; </span><span class="s1">i &lt;= </span><span class="s5">3950</span><span class="s4">; </span><span class="s1">i += </span><span class="s5">75</span><span class="s1">)</span>
+        <span class="s4">this</span><span class="s1">-&gt;addPlatform(i</span><span class="s4">, </span><span class="s5">1200</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s4">for </span><span class="s1">(</span><span class="s4">int </span><span class="s1">i = </span><span class="s5">4150</span><span class="s4">; </span><span class="s1">i &lt;= </span><span class="s5">4375</span><span class="s4">; </span><span class="s1">i += </span><span class="s5">75</span><span class="s1">)</span>
+        <span class="s4">this</span><span class="s1">-&gt;addPlatform(i</span><span class="s4">, </span><span class="s5">1000</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s4">for </span><span class="s1">(</span><span class="s4">int </span><span class="s1">i = </span><span class="s5">3600</span><span class="s4">; </span><span class="s1">i &lt;= </span><span class="s5">3950</span><span class="s4">; </span><span class="s1">i += </span><span class="s5">75</span><span class="s1">)</span>
+        <span class="s4">this</span><span class="s1">-&gt;addPlatform(i</span><span class="s4">, </span><span class="s5">800</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s4">for </span><span class="s1">(</span><span class="s4">int </span><span class="s1">i = </span><span class="s5">4150</span><span class="s4">; </span><span class="s1">i &lt;= </span><span class="s5">4375</span><span class="s4">; </span><span class="s1">i += </span><span class="s5">75</span><span class="s1">)</span>
+        <span class="s4">this</span><span class="s1">-&gt;addPlatform(i</span><span class="s4">, </span><span class="s5">600</span><span class="s1">)</span><span class="s4">;</span>
+
+    <span class="s0">//Stage 3 Separator</span>
+    <span class="s4">for</span><span class="s1">(</span><span class="s4">int </span><span class="s1">x = </span><span class="s5">4735</span><span class="s4">; </span><span class="s1">x &lt;= </span><span class="s5">5035</span><span class="s4">; </span><span class="s1">x += </span><span class="s5">75</span><span class="s1">)</span>
+        <span class="s4">for</span><span class="s1">(</span><span class="s4">int </span><span class="s1">y = </span><span class="s5">1545</span><span class="s4">; </span><span class="s1">y &gt;= </span><span class="s5">795</span><span class="s4">; </span><span class="s1">y -= </span><span class="s5">75</span><span class="s1">)</span>
+            <span class="s4">this</span><span class="s1">-&gt;addPlatform(x</span><span class="s4">,</span><span class="s1">y)</span><span class="s4">;</span>
+    <span class="s4">for</span><span class="s1">(</span><span class="s4">int </span><span class="s1">i = </span><span class="s5">1545</span><span class="s4">; </span><span class="s1">i &gt;= </span><span class="s5">1000</span><span class="s4">; </span><span class="s1">i -= </span><span class="s5">75</span><span class="s1">)</span>
+        <span class="s4">this</span><span class="s1">-&gt;addPlatform(</span><span class="s5">5110</span><span class="s4">,</span><span class="s1">i)</span><span class="s4">;</span>
+    <span class="s4">for</span><span class="s1">(</span><span class="s4">int </span><span class="s1">i = </span><span class="s5">1545</span><span class="s4">; </span><span class="s1">i &gt;= </span><span class="s5">1200</span><span class="s4">; </span><span class="s1">i -= </span><span class="s5">75</span><span class="s1">)</span>
+        <span class="s4">this</span><span class="s1">-&gt;addPlatform(</span><span class="s5">5175</span><span class="s4">,</span><span class="s1">i)</span><span class="s4">;</span>
+    <span class="s4">for</span><span class="s1">(</span><span class="s4">int </span><span class="s1">i = </span><span class="s5">1545</span><span class="s4">; </span><span class="s1">i &gt;= </span><span class="s5">1400</span><span class="s4">; </span><span class="s1">i -= </span><span class="s5">75</span><span class="s1">)</span>
+        <span class="s4">this</span><span class="s1">-&gt;addPlatform(</span><span class="s5">5250</span><span class="s4">,</span><span class="s1">i)</span><span class="s4">;</span>
+
+    <span class="s0">//Stage 3</span>
+    <span class="s4">for </span><span class="s1">(</span><span class="s4">int </span><span class="s1">x = </span><span class="s5">5425</span><span class="s4">; </span><span class="s1">x &lt;= </span><span class="s5">5575</span><span class="s4">; </span><span class="s1">x += </span><span class="s5">75</span><span class="s1">)</span>
+        <span class="s4">this</span><span class="s1">-&gt;addPlatform(x</span><span class="s4">, </span><span class="s5">1000</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s4">for </span><span class="s1">(</span><span class="s4">int </span><span class="s1">x = </span><span class="s5">5800</span><span class="s4">; </span><span class="s1">x &lt;= </span><span class="s5">5950</span><span class="s4">; </span><span class="s1">x += </span><span class="s5">75</span><span class="s1">)</span>
+        <span class="s4">this</span><span class="s1">-&gt;addPlatform(x</span><span class="s4">, </span><span class="s5">1150</span><span class="s1">)</span><span class="s4">;</span>
+
+    <span class="s0">//Final Separator</span>
+    <span class="s4">for</span><span class="s1">(</span><span class="s4">int </span><span class="s1">x = </span><span class="s5">6175</span><span class="s4">; </span><span class="s1">x &lt;= </span><span class="s5">6325</span><span class="s4">; </span><span class="s1">x += </span><span class="s5">75</span><span class="s1">)</span>
+        <span class="s4">for</span><span class="s1">(</span><span class="s4">int </span><span class="s1">y = </span><span class="s5">1545</span><span class="s4">; </span><span class="s1">y &gt;= </span><span class="s5">1245</span><span class="s4">; </span><span class="s1">y -= </span><span class="s5">75</span><span class="s1">)</span>
+            <span class="s4">this</span><span class="s1">-&gt;addPlatform(x</span><span class="s4">,</span><span class="s1">y)</span><span class="s4">;</span>
+<span class="s1">}</span>
+
+</pre>
+</body>
+</html>

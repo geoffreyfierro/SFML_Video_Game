@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>GameText.h</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #bbb529;}
+.s3 { color: #6a8759;}
+.s4 { color: #cc7832;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+GameText.h</font>
+</center></td></tr></table>
+<pre><span class="s0">//</span>
+<span class="s0">// Created by Dave R. Smith on 10/27/19.</span>
+<span class="s0">//</span>
+
+<span class="s2">#ifndef </span><span class="s1">SFML_GAMETEXT_H</span>
+<span class="s2">#define </span><span class="s1">SFML_GAMETEXT_H</span>
+<span class="s2">#include </span><span class="s3">&lt;SFML/Graphics.hpp&gt;</span>
+
+<span class="s4">class </span><span class="s1">GameText:</span><span class="s4">public </span><span class="s1">sf::Transform</span><span class="s4">, public </span><span class="s1">sf::Drawable {</span>
+<span class="s4">private</span><span class="s1">:</span>
+    <span class="s1">sf::Text* text</span><span class="s4">;</span>
+    <span class="s1">sf::Font* font</span><span class="s4">;</span>
+<span class="s4">public</span><span class="s1">:</span>
+    <span class="s1">GameText(std::string text</span><span class="s4">, unsigned int </span><span class="s1">charSize</span><span class="s4">, </span><span class="s1">sf::Vector2f position)</span><span class="s4">;</span>
+    <span class="s0">//GameText(const GameText&amp; gameText);</span>
+    <span class="s1">GameText()</span><span class="s4">;</span>
+    <span class="s1">sf::Text* getText()</span><span class="s4">;</span>
+    <span class="s4">void </span><span class="s1">setText()</span><span class="s4">;</span>
+    <span class="s4">void </span><span class="s1">setPosition(</span><span class="s4">float </span><span class="s1">x</span><span class="s4">, float </span><span class="s1">y)</span><span class="s4">;</span>
+    <span class="s4">virtual void </span><span class="s1">draw(sf::RenderTarget &amp;window</span><span class="s4">, </span><span class="s1">sf::RenderStates states) </span><span class="s4">const;</span>
+<span class="s1">}</span><span class="s4">;</span>
+
+
+<span class="s2">#endif </span><span class="s0">//SFML_GAMETEXT_H</span>
+</pre>
+</body>
+</html>

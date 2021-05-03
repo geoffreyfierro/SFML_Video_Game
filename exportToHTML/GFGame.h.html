@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>GFGame.h</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #bbb529;}
+.s3 { color: #6a8759;}
+.s4 { color: #cc7832;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+GFGame.h</font>
+</center></td></tr></table>
+<pre><span class="s0">//</span>
+<span class="s0">// Created by geoff on 5/14/2020.</span>
+<span class="s0">//</span>
+
+<span class="s2">#ifndef </span><span class="s1">SFML_PROJECT_GFGAME_H</span>
+<span class="s2">#define </span><span class="s1">SFML_PROJECT_GFGAME_H</span>
+
+<span class="s2">#include </span><span class="s3">&lt;SFML/Graphics.hpp&gt;</span>
+<span class="s2">#include </span><span class="s3">&quot;Game.h&quot;</span>
+<span class="s2">#include </span><span class="s3">&lt;vector&gt;</span>
+<span class="s2">#include </span><span class="s3">&quot;Player.h&quot;</span>
+<span class="s2">#include </span><span class="s3">&quot;Background.h&quot;</span>
+<span class="s2">#include </span><span class="s3">&quot;Map.h&quot;</span>
+<span class="s2">#include </span><span class="s3">&quot;MonsterArray.h&quot;</span>
+<span class="s2">#include </span><span class="s3">&quot;Hearts.h&quot;</span>
+<span class="s2">#include </span><span class="s3">&quot;WonGameScreen.h&quot;</span>
+<span class="s2">#include </span><span class="s3">&quot;LostGameScreen.h&quot;</span>
+
+<span class="s4">class </span><span class="s1">GFGame : </span><span class="s4">public </span><span class="s1">Game{</span>
+<span class="s4">private</span><span class="s1">:</span>
+    <span class="s1">GameText *logo</span><span class="s4">;</span>
+
+    <span class="s1">sf::Font *titleFont</span><span class="s4">;</span>
+    <span class="s1">sf::Text *titleText</span><span class="s4">;</span>
+    <span class="s1">sf::Text *subTitleText</span><span class="s4">;</span>
+    <span class="s1">sf::View *view</span><span class="s4">;</span>
+
+    <span class="s1">Background *background</span><span class="s4">;</span>
+
+    <span class="s4">bool </span><span class="s1">startGame</span><span class="s4">;</span>
+
+    <span class="s1">Player *player</span><span class="s4">;</span>
+    <span class="s1">Map *map</span><span class="s4">;</span>
+    <span class="s1">FinishFlag *flag</span><span class="s4">;</span>
+    <span class="s1">Hearts *hearts</span><span class="s4">;</span>
+    <span class="s1">MonsterArray *monster</span><span class="s4">;</span>
+
+    <span class="s1">WonGameScreen *wonGameScreen</span><span class="s4">;</span>
+    <span class="s1">LostGameScreen *lostGameScreen</span><span class="s4">;</span>
+
+<span class="s4">public</span><span class="s1">:</span>
+    <span class="s1">GFGame()</span><span class="s4">;</span>
+    <span class="s1">~GFGame()</span><span class="s4">;</span>
+
+    <span class="s4">virtual void </span><span class="s1">start(sf::RenderWindow&amp; window)</span><span class="s4">;</span>
+    <span class="s4">virtual void </span><span class="s1">addEvents(sf::RenderWindow &amp;window)</span><span class="s4">;</span>
+    <span class="s4">virtual void </span><span class="s1">addEvents(</span><span class="s4">const </span><span class="s1">sf::RenderWindow &amp;window</span><span class="s4">, </span><span class="s1">sf::Event&amp; event)</span><span class="s4">;</span>
+    <span class="s4">virtual void </span><span class="s1">draw(sf::RenderTarget &amp;window</span><span class="s4">, </span><span class="s1">sf::RenderStates states) </span><span class="s4">const;</span>
+    <span class="s4">virtual void </span><span class="s1">exit()</span><span class="s4">;</span>
+<span class="s1">}</span><span class="s4">;</span>
+
+
+<span class="s2">#endif </span><span class="s0">//SFML_PROJECT_GFGAME_H</span>
+</pre>
+</body>
+</html>

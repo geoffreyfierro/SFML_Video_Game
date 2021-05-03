@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>GFGame.cpp</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #bbb529;}
+.s3 { color: #6a8759;}
+.s4 { color: #cc7832;}
+.s5 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+GFGame.cpp</font>
+</center></td></tr></table>
+<pre><span class="s0">//</span>
+<span class="s0">// Created by geoff on 5/14/2020.</span>
+<span class="s0">//</span>
+
+<span class="s2">#include </span><span class="s3">&quot;GFGame.h&quot;</span>
+
+<span class="s1">GFGame::GFGame() {</span>
+    <span class="s1">image_path = </span><span class="s3">&quot;GFGame/Pictures/thumbnail.png&quot;</span><span class="s4">;</span>
+    <span class="s1">title = </span><span class="s3">&quot;Snail Explorer&quot;</span><span class="s4">;</span>
+    <span class="s1">logo = </span><span class="s4">new </span><span class="s1">GameText(title</span><span class="s4">, </span><span class="s5">96</span><span class="s4">, </span><span class="s1">sf::Vector2f(</span><span class="s5">0</span><span class="s4">,</span><span class="s5">0</span><span class="s1">))</span><span class="s4">;</span>
+
+    <span class="s1">titleFont = </span><span class="s4">new </span><span class="s1">sf::Font()</span><span class="s4">;</span>
+    <span class="s1">titleFont-&gt;loadFromFile(</span><span class="s3">&quot;GFGame/Fonts/CHICKEN_Pie.ttf&quot;</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">titleText = </span><span class="s4">new </span><span class="s1">sf::Text(title</span><span class="s4">, </span><span class="s1">*titleFont</span><span class="s4">, </span><span class="s5">96</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">subTitleText = </span><span class="s4">new </span><span class="s1">sf::Text(</span><span class="s3">&quot;Click to Start&quot;</span><span class="s4">, </span><span class="s1">*titleFont</span><span class="s4">, </span><span class="s5">48</span><span class="s1">)</span><span class="s4">;</span>
+
+
+
+    <span class="s1">view = </span><span class="s4">new </span><span class="s1">sf::View(sf::Vector2f(</span><span class="s5">0.f</span><span class="s4">,</span><span class="s5">0.f</span><span class="s1">)</span><span class="s4">, </span><span class="s1">sf::Vector2f(</span><span class="s5">1920</span><span class="s4">,</span><span class="s5">1080</span><span class="s1">))</span><span class="s4">;</span>
+    <span class="s1">startGame = </span><span class="s4">false;</span>
+
+    <span class="s1">background = </span><span class="s4">new </span><span class="s1">Background()</span><span class="s4">;</span>
+    <span class="s1">player = </span><span class="s4">new </span><span class="s1">Player()</span><span class="s4">;</span>
+    <span class="s1">map = </span><span class="s4">new </span><span class="s1">Map()</span><span class="s4">;</span>
+    <span class="s1">flag = </span><span class="s4">new </span><span class="s1">FinishFlag()</span><span class="s4">;</span>
+    <span class="s1">monster = </span><span class="s4">new </span><span class="s1">MonsterArray()</span><span class="s4">;</span>
+    <span class="s1">hearts = </span><span class="s4">new </span><span class="s1">Hearts()</span><span class="s4">;</span>
+
+    <span class="s1">wonGameScreen = </span><span class="s4">new </span><span class="s1">WonGameScreen()</span><span class="s4">;</span>
+    <span class="s1">lostGameScreen = </span><span class="s4">new </span><span class="s1">LostGameScreen()</span><span class="s4">;</span>
+<span class="s1">}</span>
+
+<span class="s4">void </span><span class="s1">GFGame::start(sf::RenderWindow &amp;window) {</span>
+    <span class="s1">logo-&gt;getText()-&gt;setPosition(window.getSize().x/</span><span class="s5">2 </span><span class="s1">-logo-&gt;getText()-&gt;getGlobalBounds().width/</span><span class="s5">2</span><span class="s4">, </span><span class="s1">window.getSize().y/</span><span class="s5">2 </span><span class="s1">-logo-&gt;getText()-&gt;getGlobalBounds().height/</span><span class="s5">2 </span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">titleText-&gt;setPosition(window.getSize().x/</span><span class="s5">2 </span><span class="s1">- titleText-&gt;getGlobalBounds().width/</span><span class="s5">2</span><span class="s4">,</span><span class="s1">window.getSize().y/</span><span class="s5">2 </span><span class="s1">- titleText-&gt;getGlobalBounds().height/</span><span class="s5">2</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">subTitleText-&gt;setPosition(window.getSize().x/</span><span class="s5">2 </span><span class="s1">- subTitleText-&gt;getGlobalBounds().width/</span><span class="s5">2</span><span class="s4">, </span><span class="s1">titleText-&gt;getPosition().y + (titleText-&gt;getGlobalBounds().height*</span><span class="s5">2</span><span class="s1">))</span><span class="s4">;</span>
+
+    <span class="s1">window.getView()</span><span class="s4">;</span>
+
+
+<span class="s1">}</span>
+
+<span class="s4">void </span><span class="s1">GFGame::addEvents(sf::RenderWindow &amp;window) {</span>
+    <span class="s4">if</span><span class="s1">(sf::Mouse::isButtonPressed(sf::Mouse::Left)){</span>
+        <span class="s1">startGame = </span><span class="s4">true;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">monster-&gt;update()</span><span class="s4">;</span>
+    <span class="s1">player-&gt;update(*map</span><span class="s4">, </span><span class="s1">*monster</span><span class="s4">, </span><span class="s1">*flag)</span><span class="s4">;</span>
+    <span class="s1">hearts-&gt;update(*player)</span><span class="s4">;</span>
+    <span class="s1">view-&gt;setCenter(player-&gt;getPositionCenter())</span><span class="s4">;</span>
+<span class="s1">}</span>
+
+<span class="s4">void </span><span class="s1">GFGame::addEvents(</span><span class="s4">const </span><span class="s1">sf::RenderWindow &amp;window</span><span class="s4">, </span><span class="s1">sf::Event &amp;event) {</span>
+
+<span class="s1">}</span>
+
+<span class="s4">void </span><span class="s1">GFGame::draw(sf::RenderTarget &amp;window</span><span class="s4">, </span><span class="s1">sf::RenderStates states) </span><span class="s4">const </span><span class="s1">{</span>
+    <span class="s4">if</span><span class="s1">(!startGame){</span>
+        <span class="s1">window.draw(*titleText)</span><span class="s4">;</span>
+        <span class="s1">window.draw(*subTitleText)</span><span class="s4">;</span>
+
+    <span class="s1">}</span>
+    <span class="s4">else if</span><span class="s1">(startGame){</span>
+        <span class="s1">window.setView(*view)</span><span class="s4">;</span>
+        <span class="s1">background-&gt;setBackgorund(</span><span class="s4">dynamic_cast</span><span class="s1">&lt;sf::RenderWindow &amp;&gt;(window))</span><span class="s4">;</span>
+        <span class="s4">for</span><span class="s1">(</span><span class="s4">int </span><span class="s1">i = </span><span class="s5">0</span><span class="s4">; </span><span class="s1">i &lt; map-&gt;platforms.size()</span><span class="s4">; </span><span class="s1">i++){</span>
+            <span class="s1">map-&gt;platforms[i]-&gt;draw(</span><span class="s4">dynamic_cast</span><span class="s1">&lt;sf::RenderWindow &amp;&gt;(window))</span><span class="s4">;</span>
+        <span class="s1">}</span>
+        <span class="s4">for</span><span class="s1">(</span><span class="s4">int </span><span class="s1">i = </span><span class="s5">0</span><span class="s4">; </span><span class="s1">i &lt; monster-&gt;monster.size()</span><span class="s4">; </span><span class="s1">i++){</span>
+            <span class="s1">monster-&gt;monster[i]-&gt;draw(</span><span class="s4">dynamic_cast</span><span class="s1">&lt;sf::RenderWindow &amp;&gt;(window))</span><span class="s4">;</span>
+        <span class="s1">}</span>
+        <span class="s1">player-&gt;draw(</span><span class="s4">dynamic_cast</span><span class="s1">&lt;sf::RenderWindow &amp;&gt;(window))</span><span class="s4">;</span>
+        <span class="s1">hearts-&gt;draw(</span><span class="s4">dynamic_cast</span><span class="s1">&lt;sf::RenderWindow &amp;&gt;(window))</span><span class="s4">;</span>
+        <span class="s1">flag-&gt;draw(</span><span class="s4">dynamic_cast</span><span class="s1">&lt;sf::RenderWindow &amp;&gt;(window))</span><span class="s4">;</span>
+        <span class="s1">wonGameScreen-&gt;draw(</span><span class="s4">dynamic_cast</span><span class="s1">&lt;sf::RenderWindow &amp;&gt;(window)</span><span class="s4">, </span><span class="s1">*player)</span><span class="s4">;</span>
+        <span class="s1">lostGameScreen-&gt;draw(</span><span class="s4">dynamic_cast</span><span class="s1">&lt;sf::RenderWindow &amp;&gt;(window)</span><span class="s4">, </span><span class="s1">*player)</span><span class="s4">;</span>
+    <span class="s1">}</span>
+
+<span class="s1">}</span>
+
+<span class="s4">void </span><span class="s1">GFGame::exit() {</span>
+    <span class="s4">this</span><span class="s1">-&gt;~GFGame()</span><span class="s4">;</span>
+<span class="s1">}</span>
+
+<span class="s1">GFGame::~GFGame() {</span>
+    <span class="s4">delete </span><span class="s1">logo</span><span class="s4">;</span>
+    <span class="s4">delete </span><span class="s1">titleFont</span><span class="s4">;</span>
+    <span class="s4">delete </span><span class="s1">titleText</span><span class="s4">;</span>
+    <span class="s4">delete </span><span class="s1">subTitleText</span><span class="s4">;</span>
+    <span class="s4">delete </span><span class="s1">view</span><span class="s4">;</span>
+    <span class="s4">delete </span><span class="s1">player</span><span class="s4">;</span>
+    <span class="s4">delete </span><span class="s1">map</span><span class="s4">;</span>
+    <span class="s4">delete </span><span class="s1">monster</span><span class="s4">;</span>
+    <span class="s4">delete </span><span class="s1">hearts</span><span class="s4">;</span>
+    <span class="s4">delete </span><span class="s1">flag</span><span class="s4">;</span>
+<span class="s1">}</span>
+</pre>
+</body>
+</html>

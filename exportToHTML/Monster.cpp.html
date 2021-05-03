@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>Monster.cpp</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #bbb529;}
+.s3 { color: #6a8759;}
+.s4 { color: #cc7832;}
+.s5 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Monster.cpp</font>
+</center></td></tr></table>
+<pre><span class="s0">//</span>
+<span class="s0">// Created by geoff on 6/9/2020.</span>
+<span class="s0">//</span>
+
+<span class="s2">#include </span><span class="s3">&quot;Monster.h&quot;</span>
+
+
+<span class="s1">Monster::Monster(</span><span class="s4">float </span><span class="s1">xPos</span><span class="s4">, float </span><span class="s1">yPos</span><span class="s4">, float </span><span class="s1">xDistance) {</span>
+    <span class="s4">if</span><span class="s1">(!monsterTexture.loadFromFile(</span><span class="s3">&quot;GFGame/Pictures/SaltMonster.png&quot;</span><span class="s1">))</span>
+        <span class="s1">std::cout &lt;&lt; </span><span class="s3">&quot;Failed to Load Grass Image&quot; </span><span class="s1">&lt;&lt; std::endl</span><span class="s4">;</span>
+
+    <span class="s1">monster.setTexture(monsterTexture)</span><span class="s4">;</span>
+    <span class="s1">monster.setScale(</span><span class="s5">3.f</span><span class="s4">,</span><span class="s5">3.f</span><span class="s1">)</span><span class="s4">;</span>
+
+    <span class="s4">this</span><span class="s1">-&gt;xPos = xPos</span><span class="s4">;</span>
+
+    <span class="s1">startPos = xPos</span><span class="s4">;</span>
+    <span class="s1">endPos = startPos + xDistance</span><span class="s4">;</span>
+    <span class="s1">xSpeed = </span><span class="s5">2</span><span class="s4">;</span>
+
+    <span class="s1">monster.setPosition(xPos</span><span class="s4">,</span><span class="s1">yPos)</span><span class="s4">;</span>
+<span class="s1">}</span>
+
+<span class="s4">void </span><span class="s1">Monster::draw(sf::RenderWindow &amp;window) {</span>
+    <span class="s1">window.draw(monster)</span><span class="s4">;</span>
+<span class="s1">}</span>
+
+<span class="s4">void </span><span class="s1">Monster::update() {</span>
+    <span class="s1">xPos = monster.getPosition().x</span><span class="s4">;</span>
+
+    <span class="s4">if</span><span class="s1">(moveRight){</span>
+        <span class="s1">xSpeed = </span><span class="s5">2</span><span class="s4">;</span>
+
+        <span class="s4">if</span><span class="s1">(xPos + monster.getGlobalBounds().width &gt;= endPos){</span>
+            <span class="s1">moveRight = </span><span class="s4">false;</span>
+            <span class="s1">moveLeft = </span><span class="s4">true;</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+    <span class="s4">else if</span><span class="s1">(moveLeft){</span>
+        <span class="s1">xSpeed = -</span><span class="s5">2</span><span class="s4">;</span>
+
+        <span class="s4">if</span><span class="s1">(xPos &lt;= startPos){</span>
+            <span class="s1">moveRight = </span><span class="s4">true;</span>
+            <span class="s1">moveLeft = </span><span class="s4">false;</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+    <span class="s1">monster.move(xSpeed</span><span class="s4">, </span><span class="s5">0</span><span class="s1">)</span><span class="s4">;</span>
+<span class="s1">}</span>
+
+<span class="s4">float </span><span class="s1">Monster::getTop() {</span>
+    <span class="s4">return </span><span class="s1">monster.getGlobalBounds().top</span><span class="s4">;</span>
+<span class="s1">}</span>
+
+<span class="s4">float </span><span class="s1">Monster::getHeight() {</span>
+    <span class="s4">return </span><span class="s1">monster.getGlobalBounds().height</span><span class="s4">;</span>
+<span class="s1">}</span>
+
+<span class="s4">float </span><span class="s1">Monster::getLeft() {</span>
+    <span class="s4">return </span><span class="s1">monster.getGlobalBounds().left</span><span class="s4">;</span>
+<span class="s1">}</span>
+
+<span class="s4">float </span><span class="s1">Monster::getWidth() {</span>
+    <span class="s4">return </span><span class="s1">monster.getGlobalBounds().width</span><span class="s4">;</span>
+<span class="s1">}</span>
+
+
+</pre>
+</body>
+</html>

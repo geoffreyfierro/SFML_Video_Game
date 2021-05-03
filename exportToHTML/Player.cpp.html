@@ -1,0 +1,177 @@
+<html>
+<head>
+<title>Player.cpp</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #bbb529;}
+.s3 { color: #6a8759;}
+.s4 { color: #cc7832;}
+.s5 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Player.cpp</font>
+</center></td></tr></table>
+<pre><span class="s0">//</span>
+<span class="s0">// Created by geoff on 5/27/2020.</span>
+<span class="s0">//</span>
+
+<span class="s2">#include </span><span class="s3">&quot;Player.h&quot;</span>
+
+<span class="s1">Player::Player() {</span>
+    <span class="s4">if</span><span class="s1">(!snailRight.loadFromFile(</span><span class="s3">&quot;GFGame/Pictures/SnailRight.png&quot;</span><span class="s1">))</span>
+        <span class="s1">std::cout &lt;&lt; </span><span class="s3">&quot;Snail Image Failed to Load&quot; </span><span class="s1">&lt;&lt; std::endl</span><span class="s4">;</span>
+    <span class="s4">if</span><span class="s1">(!snailLeft.loadFromFile(</span><span class="s3">&quot;GFGame/Pictures/SnailLeft.png&quot;</span><span class="s1">))</span>
+        <span class="s1">std::cout &lt;&lt; </span><span class="s3">&quot;Snail Image Failed to Load&quot; </span><span class="s1">&lt;&lt; std::endl</span><span class="s4">;</span>
+
+    <span class="s1">player.setTexture(snailRight)</span><span class="s4">;</span>
+
+    <span class="s1">player.setScale(</span><span class="s5">3.f</span><span class="s4">,</span><span class="s5">3.f</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">player.setPosition((</span><span class="s5">1035</span><span class="s1">)</span><span class="s4">,</span><span class="s5">1920</span><span class="s1">/</span><span class="s5">2</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s0">//player.setPosition(4735,750);</span>
+
+    <span class="s1">xSpeed = </span><span class="s5">0</span><span class="s4">;</span>
+    <span class="s1">ySpeed = </span><span class="s5">0</span><span class="s4">;</span>
+
+    <span class="s1">accelGrav = </span><span class="s5">0.5f</span><span class="s4">;</span>
+    <span class="s1">maxGrav = </span><span class="s5">5.f</span><span class="s4">;</span>
+    <span class="s1">jumpHeight = </span><span class="s5">15.f</span><span class="s4">;</span>
+
+    <span class="s1">lives = </span><span class="s5">3</span><span class="s4">;</span>
+
+    <span class="s1">onGround = </span><span class="s4">false;</span>
+    <span class="s1">isCollided = </span><span class="s4">false;</span>
+    <span class="s1">hitMonster = </span><span class="s4">false;</span>
+
+    <span class="s1">wonGame = </span><span class="s4">false;</span>
+
+<span class="s1">}</span>
+
+<span class="s4">void </span><span class="s1">Player::draw(sf::RenderWindow &amp;window) {</span>
+    <span class="s1">window.draw(player)</span><span class="s4">;</span>
+<span class="s1">}</span>
+
+<span class="s4">void </span><span class="s1">Player::update(Map map</span><span class="s4">, </span><span class="s1">MonsterArray monster</span><span class="s4">, </span><span class="s1">FinishFlag flag) {</span>
+    <span class="s4">if</span><span class="s1">(hitMonster){</span>
+        <span class="s1">player.setPosition(</span><span class="s5">1035.f</span><span class="s4">,</span><span class="s5">960.f</span><span class="s1">)</span><span class="s4">;</span>
+        <span class="s1">lives--</span><span class="s4">;</span>
+    <span class="s1">}</span>
+
+    <span class="s4">if</span><span class="s1">(sf::Keyboard::isKeyPressed(sf::Keyboard::Space) &amp;&amp; onGround)</span>
+        <span class="s1">ySpeed = -jumpHeight</span><span class="s4">;</span>
+
+    <span class="s4">if</span><span class="s1">(!onGround){</span>
+        <span class="s1">ySpeed += accelGrav</span><span class="s4">;</span>
+        <span class="s4">if</span><span class="s1">(ySpeed &gt; maxGrav)</span>
+            <span class="s1">ySpeed = maxGrav</span><span class="s4">;</span>
+    <span class="s1">}</span>
+
+    <span class="s4">if </span><span class="s1">(sf::Keyboard::isKeyPressed(sf::Keyboard::S))</span>
+        <span class="s1">ySpeed = </span><span class="s5">5</span><span class="s4">;</span>
+
+    <span class="s4">if </span><span class="s1">(sf::Keyboard::isKeyPressed(sf::Keyboard::A)){</span>
+        <span class="s1">player.setTexture(snailLeft)</span><span class="s4">;</span>
+        <span class="s1">xSpeed = -</span><span class="s5">5</span><span class="s4">;</span>
+    <span class="s1">}</span>
+    <span class="s4">if </span><span class="s1">(sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {</span>
+        <span class="s1">player.setTexture((snailRight))</span><span class="s4">;</span>
+        <span class="s1">xSpeed = </span><span class="s5">5</span><span class="s4">;</span>
+    <span class="s1">}</span>
+
+    <span class="s4">if </span><span class="s1">(!(sf::Keyboard::isKeyPressed(sf::Keyboard::A) || sf::Keyboard::isKeyPressed(sf::Keyboard::D)))</span>
+        <span class="s1">xSpeed = </span><span class="s5">0</span><span class="s4">;</span>
+    <span class="s4">if </span><span class="s1">(sf::Keyboard::isKeyPressed(sf::Keyboard::A) &amp;&amp; sf::Keyboard::isKeyPressed(sf::Keyboard::D))</span>
+        <span class="s1">xSpeed = </span><span class="s5">0</span><span class="s4">;</span>
+
+    <span class="s4">if</span><span class="s1">(player.getGlobalBounds().left &lt; </span><span class="s5">960 </span><span class="s1">&amp;&amp; !sf::Keyboard::isKeyPressed(sf::Keyboard::D)){</span>
+        <span class="s1">xSpeed = </span><span class="s5">0</span><span class="s4">;</span>
+    <span class="s1">}</span>
+    <span class="s4">if</span><span class="s1">(player.getGlobalBounds().left + player.getGlobalBounds().width &gt; </span><span class="s5">6720 </span><span class="s1">&amp;&amp; !sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {</span>
+        <span class="s1">xSpeed = </span><span class="s5">0</span><span class="s4">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">leftSide = player.getGlobalBounds().left</span><span class="s4">;</span>
+    <span class="s1">leftSide + player.getGlobalBounds().width</span><span class="s4">;</span>
+    <span class="s1">topSide = player.getGlobalBounds().top</span><span class="s4">;</span>
+    <span class="s1">topSide + player.getGlobalBounds().height</span><span class="s4">;</span>
+
+    <span class="s1">player.move(xSpeed</span><span class="s4">,</span><span class="s5">0</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">collision(xSpeed</span><span class="s4">, </span><span class="s5">0</span><span class="s4">, </span><span class="s1">map)</span><span class="s4">;</span>
+
+    <span class="s1">onGround = </span><span class="s4">false;</span>
+    <span class="s1">player.move(</span><span class="s5">0</span><span class="s4">,</span><span class="s1">ySpeed)</span><span class="s4">;</span>
+    <span class="s1">collision(</span><span class="s5">0</span><span class="s4">, </span><span class="s1">ySpeed</span><span class="s4">, </span><span class="s1">map)</span><span class="s4">;</span>
+
+    <span class="s1">hitMonster = </span><span class="s4">false;</span>
+    <span class="s1">monsterCollision(monster)</span><span class="s4">;</span>
+
+    <span class="s1">checkGameWin(flag)</span><span class="s4">;</span>
+
+<span class="s1">}</span>
+
+<span class="s4">void </span><span class="s1">Player::collision(</span><span class="s4">float </span><span class="s1">xVol</span><span class="s4">, float </span><span class="s1">yVol</span><span class="s4">, </span><span class="s1">Map platform) {</span>
+    <span class="s4">for</span><span class="s1">(</span><span class="s4">int </span><span class="s1">i = </span><span class="s5">0</span><span class="s4">; </span><span class="s1">i &lt; platform.platforms.size()</span><span class="s4">; </span><span class="s1">i++) {</span>
+        <span class="s1">isCollided = (player.getGlobalBounds().left + player.getGlobalBounds().width) &gt; platform.platforms[i]-&gt;getLeftSide() &amp;&amp;</span>
+                     <span class="s1">player.getGlobalBounds().top &lt; platform.platforms[i]-&gt;getBottomSide() &amp;&amp;</span>
+                     <span class="s1">(player.getGlobalBounds().top + player.getGlobalBounds().height) &gt; platform.platforms[i]-&gt;getTopSide() &amp;&amp;</span>
+                     <span class="s1">player.getGlobalBounds().left &lt; platform.platforms[i]-&gt;getRightSide()</span><span class="s4">;</span>
+
+        <span class="s4">if </span><span class="s1">(isCollided) {</span>
+            <span class="s4">if </span><span class="s1">(xVol &gt; </span><span class="s5">0.f</span><span class="s1">) {</span>
+                <span class="s1">player.setPosition(platform.platforms[i]-&gt;getLeftSide() - player.getGlobalBounds().width</span><span class="s4">, </span><span class="s1">player.getPosition().y)</span><span class="s4">;</span>
+                <span class="s1">xSpeed = </span><span class="s5">0.f</span><span class="s4">;</span>
+            <span class="s1">}</span>
+            <span class="s4">else if </span><span class="s1">(xVol &lt; </span><span class="s5">0.f</span><span class="s1">) {</span>
+                <span class="s1">player.setPosition(platform.platforms[i]-&gt;getRightSide()</span><span class="s4">, </span><span class="s1">player.getPosition().y)</span><span class="s4">;</span>
+                <span class="s1">xSpeed = </span><span class="s5">0.f</span><span class="s4">;</span>
+            <span class="s1">}</span>
+            <span class="s4">else if </span><span class="s1">(yVol &gt; </span><span class="s5">0.f</span><span class="s1">) {</span>
+                <span class="s1">player.setPosition(player.getPosition().x</span><span class="s4">, </span><span class="s1">platform.platforms[i]-&gt;getTopSide() - player.getGlobalBounds().height)</span><span class="s4">;</span>
+                <span class="s1">ySpeed = </span><span class="s5">0.f</span><span class="s4">;</span>
+                <span class="s1">onGround = </span><span class="s4">true;</span>
+            <span class="s1">}</span>
+            <span class="s4">else if </span><span class="s1">(yVol &lt; </span><span class="s5">0.f</span><span class="s1">) {</span>
+                <span class="s1">player.setPosition(player.getPosition().x</span><span class="s4">, </span><span class="s1">platform.platforms[i]-&gt;getBottomSide())</span><span class="s4">;</span>
+                <span class="s1">ySpeed = </span><span class="s5">0.f</span><span class="s4">;</span>
+            <span class="s1">}</span>
+
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+<span class="s1">}</span>
+
+<span class="s1">sf::Vector2f Player::getPositionCenter() {</span>
+    <span class="s4">return </span><span class="s1">sf::Vector2f(player.getPosition().x + player.getGlobalBounds().width/</span><span class="s5">2.f</span><span class="s4">, </span><span class="s1">player.getPosition().y + player.getGlobalBounds().height/</span><span class="s5">2.f</span><span class="s1">)</span><span class="s4">;</span>
+<span class="s1">}</span>
+
+<span class="s4">void </span><span class="s1">Player::monsterCollision(MonsterArray monster) {</span>
+    <span class="s4">for</span><span class="s1">(</span><span class="s4">int </span><span class="s1">i = </span><span class="s5">0</span><span class="s4">; </span><span class="s1">i &lt;monster.monster.size()</span><span class="s4">; </span><span class="s1">i++){</span>
+        <span class="s4">if</span><span class="s1">(player.getGlobalBounds().intersects(sf::Rect&lt;</span><span class="s4">float</span><span class="s1">&gt; (monster.monster[i]-&gt;getLeft()</span><span class="s4">, </span><span class="s1">monster.monster[i]-&gt;getTop()</span><span class="s4">, </span><span class="s1">monster.monster[i]-&gt;getWidth()</span><span class="s4">, </span><span class="s1">monster.monster[i]-&gt;getHeight())))</span>
+            <span class="s1">hitMonster = </span><span class="s4">true;</span>
+    <span class="s1">}</span>
+
+<span class="s1">}</span>
+
+<span class="s4">int </span><span class="s1">Player::getLives() {</span>
+    <span class="s4">return </span><span class="s1">lives</span><span class="s4">;</span>
+<span class="s1">}</span>
+
+<span class="s4">void </span><span class="s1">Player::checkGameWin(FinishFlag flag) {</span>
+    <span class="s4">if</span><span class="s1">(player.getGlobalBounds().intersects(sf::Rect&lt;</span><span class="s4">float</span><span class="s1">&gt; (flag.getLeftSide()</span><span class="s4">, </span><span class="s1">flag.getTopSide()</span><span class="s4">, </span><span class="s1">flag.getWidth()</span><span class="s4">, </span><span class="s1">flag.getHeight())))</span>
+        <span class="s1">wonGame = </span><span class="s4">true;</span>
+<span class="s1">}</span>
+
+<span class="s4">bool </span><span class="s1">Player::getGameWon() {</span>
+    <span class="s4">return </span><span class="s1">wonGame</span><span class="s4">;</span>
+<span class="s1">}</span>
+
+<span class="s4">bool </span><span class="s1">Player::isDead() {</span>
+    <span class="s4">return </span><span class="s1">(lives &lt;= </span><span class="s5">0</span><span class="s1">)</span><span class="s4">;</span>
+<span class="s1">}</span>
+</pre>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>GameText.cpp</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #bbb529;}
+.s3 { color: #6a8759;}
+.s4 { color: #cc7832;}
+.s5 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+GameText.cpp</font>
+</center></td></tr></table>
+<pre><span class="s0">//</span>
+<span class="s0">// Created by Dave R. Smith on 10/27/19.</span>
+<span class="s0">//</span>
+
+<span class="s2">#include </span><span class="s3">&quot;GameText.h&quot;</span>
+<span class="s2">#include </span><span class="s3">&lt;SFML/Graphics.hpp&gt;</span>
+<span class="s2">#include </span><span class="s3">&lt;iostream&gt;</span>
+
+<span class="s4">void </span><span class="s1">GameText::draw(sf::RenderTarget &amp;window</span><span class="s4">, </span><span class="s1">sf::RenderStates states) </span><span class="s4">const </span><span class="s1">{</span>
+    <span class="s1">window.draw(*text</span><span class="s4">, </span><span class="s1">states)</span><span class="s4">;</span>
+<span class="s1">}</span>
+<span class="s1">GameText::GameText(std::string text</span><span class="s4">, unsigned int </span><span class="s1">charSize</span><span class="s4">, </span><span class="s1">sf::Vector2f position)</span>
+<span class="s1">{</span>
+    <span class="s4">this</span><span class="s1">-&gt;text = </span><span class="s4">new </span><span class="s1">sf::Text</span><span class="s4">;</span>
+    <span class="s1">font = </span><span class="s4">new </span><span class="s1">sf::Font</span><span class="s4">;</span>
+    <span class="s1">font-&gt;loadFromFile(</span><span class="s3">&quot;GFGame/Fonts/OpenSans-Bold.ttf&quot;</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s4">this</span><span class="s1">-&gt;text-&gt;setString(text)</span><span class="s4">;</span>
+    <span class="s4">this</span><span class="s1">-&gt;text-&gt;setFont(*font)</span><span class="s4">;</span>
+    <span class="s4">this</span><span class="s1">-&gt;text-&gt;setCharacterSize(charSize)</span><span class="s4">;</span>
+    <span class="s4">this</span><span class="s1">-&gt;text-&gt;setPosition(position.x - </span><span class="s4">this</span><span class="s1">-&gt;text-&gt;getGlobalBounds().width/</span><span class="s5">2</span><span class="s4">,</span>
+                            <span class="s1">position.y - </span><span class="s4">this</span><span class="s1">-&gt;text-&gt;getGlobalBounds().height/</span><span class="s5">2</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s4">this</span><span class="s1">-&gt;text-&gt;setOutlineColor(sf::Color::Yellow)</span><span class="s4">;</span>
+<span class="s1">}</span>
+<span class="s0">//GameText::GameText(const GameText&amp; gameText)</span>
+<span class="s0">//{</span>
+<span class="s0">//    std::cout &lt;&lt;&quot;gtextpos(&quot;&lt;&lt;gameText.text.getPosition().x&lt;&lt;&quot;, &quot;&lt;&lt;gameText.text.getPosition().y&lt;&lt;std::endl;</span>
+<span class="s0">//    text = gameText.text;</span>
+<span class="s0">//    font = gameText.font;</span>
+<span class="s0">//    text.setPosition(gameText.text.getPosition());</span>
+<span class="s0">//}</span>
+<span class="s4">void </span><span class="s1">GameText::setPosition(</span><span class="s4">float </span><span class="s1">x</span><span class="s4">, float </span><span class="s1">y)</span>
+<span class="s1">{</span>
+    <span class="s1">std::cout &lt;&lt;</span><span class="s3">&quot;pos(&quot;</span><span class="s1">&lt;&lt;x&lt;&lt;</span><span class="s3">&quot;, &quot;</span><span class="s1">&lt;&lt;y&lt;&lt;std::endl</span><span class="s4">;</span>
+    <span class="s1">text-&gt;setPosition(x</span><span class="s4">, </span><span class="s1">y)</span><span class="s4">;</span>
+    <span class="s0">//std::cout &lt;&lt;&quot;textpos(&quot;&lt;&lt;text-&gt;getPosition().x&lt;&lt;&quot;, &quot;&lt;&lt;textgetPosition().y&lt;&lt;std::endl;</span>
+<span class="s1">}</span>
+<span class="s1">sf::Text* GameText::getText()</span>
+<span class="s1">{</span>
+    <span class="s4">return </span><span class="s1">text</span><span class="s4">;</span>
+<span class="s1">}</span>
+<span class="s1">GameText::GameText(){}</span></pre>
+</body>
+</html>

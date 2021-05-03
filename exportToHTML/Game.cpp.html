@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>Game.cpp</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #bbb529;}
+.s3 { color: #6a8759;}
+.s4 { color: #cc7832;}
+.s5 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Game.cpp</font>
+</center></td></tr></table>
+<pre><span class="s0">//</span>
+<span class="s0">// Created by Dave R. Smith on 10/25/19.</span>
+<span class="s0">//</span>
+
+<span class="s2">#include </span><span class="s3">&quot;Game.h&quot;</span>
+<span class="s2">#include </span><span class="s3">&lt;SFML/Graphics.hpp&gt;</span>
+<span class="s2">#include </span><span class="s3">&lt;iostream&gt;</span>
+
+<span class="s0">//std::map&lt;std::string, const Game&amp;&gt; Game::LOAD_GAME;</span>
+
+<span class="s1">sf::RectangleShape* Game::getSfThumbnail() {</span>
+
+    <span class="s4">return </span><span class="s1">thumbnail.getThumbnail()</span><span class="s4">;</span>
+<span class="s1">}</span>
+
+<span class="s4">void </span><span class="s1">Game::setThumbnail() {</span>
+    <span class="s0">//thumbnail.initialize(image_path);</span>
+<span class="s1">}</span>
+
+<span class="s1">string Game::getTitle(){</span>
+    <span class="s4">return </span><span class="s1">title</span><span class="s4">;</span>
+<span class="s1">}</span>
+
+<span class="s4">void </span><span class="s1">Game::init(){</span>
+    <span class="s0">//setThumbnail();</span>
+<span class="s1">}</span>
+<span class="s1">Game::Game(){</span>
+
+<span class="s1">}</span>
+
+<span class="s4">void </span><span class="s1">Game::load_game()</span>
+<span class="s1">{</span>
+    <span class="s0">//std::cout &lt;&lt; &quot;game image path is &quot; &lt;&lt; image_path;</span>
+    <span class="s0">//Console::load_game(title, this);</span>
+<span class="s1">}</span>
+
+<span class="s0">//std::map&lt;std::string, const Game&amp;&gt; Game::getMap()</span>
+<span class="s0">//{</span>
+<span class="s0">//    return Game::LOAD_GAME;</span>
+<span class="s0">//}</span>
+
+<span class="s0">//sf::RenderWindow Game::getWindow()</span>
+<span class="s0">//{</span>
+<span class="s0">//    return window;</span>
+<span class="s0">//}</span>
+<span class="s1">std::string Game::getImagePath(){</span>
+    <span class="s4">return </span><span class="s1">image_path</span><span class="s4">;</span>
+<span class="s1">}</span>
+<span class="s1">Thumbnail Game::getThumbnail(){</span>
+    <span class="s1">Thumbnail* t = </span><span class="s4">new </span><span class="s1">Thumbnail(image_path</span><span class="s4">, </span><span class="s1">title</span><span class="s4">, </span><span class="s1">sf::Rect&lt;</span><span class="s4">float</span><span class="s1">&gt;(</span><span class="s5">10</span><span class="s4">,</span><span class="s5">10</span><span class="s4">, </span><span class="s5">300</span><span class="s4">, </span><span class="s5">300</span><span class="s1">)</span><span class="s4">, </span><span class="s1">sf::Vector2u(</span><span class="s5">500</span><span class="s4">,</span><span class="s5">500</span><span class="s1">))</span><span class="s4">;</span>
+    <span class="s1">t-&gt;getThumbnail()-&gt;setPosition(</span><span class="s5">500</span><span class="s4">, </span><span class="s5">500</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s4">return </span><span class="s1">*t</span><span class="s4">;</span>
+<span class="s1">}</span>
+<span class="s1">GameText Game::getInfo(sf::RenderWindow &amp;window)</span>
+<span class="s1">{</span>
+    <span class="s1">std::ifstream filereader</span><span class="s4">;</span>
+    <span class="s1">filereader.open(info_path)</span><span class="s4">;</span>
+    <span class="s1">string s =</span><span class="s3">&quot;&quot;</span><span class="s4">;</span>
+    <span class="s1">string next</span><span class="s4">;</span>
+    <span class="s4">while</span><span class="s1">(std::getline(filereader</span><span class="s4">, </span><span class="s1">next))</span>
+        <span class="s1">s += next+</span><span class="s3">'</span><span class="s4">\n</span><span class="s3">'</span><span class="s4">;</span>
+    <span class="s1">sf::Vector2u winSize= window.getSize()</span><span class="s4">;</span>
+    <span class="s1">GameText info(s</span><span class="s4">,</span><span class="s5">24</span><span class="s4">, </span><span class="s1">sf::Vector2f(</span><span class="s5">20</span><span class="s4">, </span><span class="s5">20</span><span class="s1">))</span><span class="s4">;</span>
+    <span class="s1">sf::Rect&lt;</span><span class="s4">float</span><span class="s1">&gt; size = info.getText()-&gt;getGlobalBounds()</span><span class="s4">;</span>
+    <span class="s1">info.getText()-&gt;setPosition(winSize.x/</span><span class="s5">2 </span><span class="s1">- size.width/</span><span class="s5">2</span><span class="s4">, </span><span class="s1">winSize.y/</span><span class="s5">2 </span><span class="s1">- size.height/</span><span class="s5">2 </span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s4">return </span><span class="s1">info</span><span class="s4">;</span>
+
+<span class="s1">}</span>
+<span class="s4">void </span><span class="s1">Game::exit()</span>
+<span class="s1">{</span>
+
+<span class="s1">}</span></pre>
+</body>
+</html>

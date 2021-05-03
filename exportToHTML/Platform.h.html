@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Platform.h</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #bbb529;}
+.s3 { color: #6a8759;}
+.s4 { color: #cc7832;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Platform.h</font>
+</center></td></tr></table>
+<pre><span class="s0">//</span>
+<span class="s0">// Created by geoff on 5/27/2020.</span>
+<span class="s0">//</span>
+
+<span class="s2">#ifndef </span><span class="s1">SFML_PROJECT_PLATFORM_H</span>
+<span class="s2">#define </span><span class="s1">SFML_PROJECT_PLATFORM_H</span>
+
+<span class="s2">#include </span><span class="s3">&lt;SFML/Graphics.hpp&gt;</span>
+
+<span class="s4">class </span><span class="s1">Platform {</span>
+<span class="s4">private</span><span class="s1">:</span>
+    <span class="s1">sf::Sprite block</span><span class="s4">;</span>
+    <span class="s1">sf::Texture texture</span><span class="s4">;</span>
+
+    <span class="s4">float </span><span class="s1">topSide</span><span class="s4">, </span><span class="s1">bottomSide</span><span class="s4">, </span><span class="s1">leftSide</span><span class="s4">, </span><span class="s1">rightSide</span><span class="s4">;</span>
+
+<span class="s4">public</span><span class="s1">:</span>
+    <span class="s1">Platform()</span><span class="s4">;</span>
+    <span class="s1">Platform(</span><span class="s4">float </span><span class="s1">xPos</span><span class="s4">, float </span><span class="s1">yPos)</span><span class="s4">;</span>
+    <span class="s4">void </span><span class="s1">draw(sf::RenderWindow &amp;window)</span><span class="s4">;</span>
+    <span class="s4">float </span><span class="s1">getTopSide()</span><span class="s4">;</span>
+    <span class="s4">float </span><span class="s1">getBottomSide()</span><span class="s4">;</span>
+    <span class="s4">float </span><span class="s1">getLeftSide()</span><span class="s4">;</span>
+    <span class="s4">float </span><span class="s1">getRightSide()</span><span class="s4">;</span>
+<span class="s1">}</span><span class="s4">;</span>
+
+
+<span class="s2">#endif </span><span class="s0">//SFML_PROJECT_PLATFORM_H</span>
+</pre>
+</body>
+</html>

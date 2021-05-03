@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>MonsterArray.cpp</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #bbb529;}
+.s3 { color: #6a8759;}
+.s4 { color: #cc7832;}
+.s5 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+MonsterArray.cpp</font>
+</center></td></tr></table>
+<pre><span class="s0">//</span>
+<span class="s0">// Created by geoff on 6/10/2020.</span>
+<span class="s0">//</span>
+
+<span class="s2">#include </span><span class="s3">&quot;MonsterArray.h&quot;</span>
+
+<span class="s1">MonsterArray::MonsterArray() {</span>
+    <span class="s4">this</span><span class="s1">-&gt;addMonster(</span><span class="s5">2500</span><span class="s4">,</span><span class="s5">1044</span><span class="s4">, </span><span class="s5">375</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s4">this</span><span class="s1">-&gt;addMonster(</span><span class="s5">3600</span><span class="s4">, </span><span class="s5">1150</span><span class="s4">, </span><span class="s5">375</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s4">this</span><span class="s1">-&gt;addMonster(</span><span class="s5">3600</span><span class="s4">, </span><span class="s5">750</span><span class="s4">, </span><span class="s5">375</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s4">this</span><span class="s1">-&gt;addMonster(</span><span class="s5">5425</span><span class="s4">, </span><span class="s5">950</span><span class="s4">, </span><span class="s5">225</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s4">this</span><span class="s1">-&gt;addMonster(</span><span class="s5">5800</span><span class="s4">, </span><span class="s5">1100</span><span class="s4">, </span><span class="s5">225</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s4">this</span><span class="s1">-&gt;addMonster(</span><span class="s5">6175</span><span class="s4">, </span><span class="s5">1195</span><span class="s4">, </span><span class="s5">225</span><span class="s1">)</span><span class="s4">;</span>
+
+<span class="s1">}</span>
+
+<span class="s4">void </span><span class="s1">MonsterArray::addMonster(</span><span class="s4">float </span><span class="s1">x</span><span class="s4">, float </span><span class="s1">y</span><span class="s4">, float </span><span class="s1">xDistance) {</span>
+    <span class="s1">monster.push_back(</span><span class="s4">new </span><span class="s1">Monster(x</span><span class="s4">,</span><span class="s1">y</span><span class="s4">, </span><span class="s1">xDistance))</span><span class="s4">;</span>
+<span class="s1">}</span>
+
+<span class="s4">void </span><span class="s1">MonsterArray::update() {</span>
+    <span class="s4">for</span><span class="s1">(</span><span class="s4">int </span><span class="s1">i = </span><span class="s5">0</span><span class="s4">; </span><span class="s1">i &lt; monster.size()</span><span class="s4">; </span><span class="s1">i++){</span>
+        <span class="s1">monster[i]-&gt;update()</span><span class="s4">;</span>
+    <span class="s1">}</span>
+<span class="s1">}</span>
+</pre>
+</body>
+</html>

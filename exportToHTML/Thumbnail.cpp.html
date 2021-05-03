@@ -1,0 +1,159 @@
+<html>
+<head>
+<title>Thumbnail.cpp</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #bbb529;}
+.s3 { color: #6a8759;}
+.s4 { color: #cc7832;}
+.s5 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Thumbnail.cpp</font>
+</center></td></tr></table>
+<pre><span class="s0">//</span>
+<span class="s0">// Created by Dave R. Smith on 10/26/19.</span>
+<span class="s0">//</span>
+
+<span class="s2">#include </span><span class="s3">&quot;Thumbnail.h&quot;</span>
+<span class="s2">#include </span><span class="s3">&lt;SFML/Graphics.hpp&gt;</span>
+<span class="s2">#include </span><span class="s3">&lt;string&gt;</span>
+<span class="s2">#include </span><span class="s3">&lt;iostream&gt;</span>
+
+<span class="s4">float </span><span class="s1">Thumbnail::x = </span><span class="s5">0</span><span class="s4">;</span>
+<span class="s4">float </span><span class="s1">Thumbnail::y = </span><span class="s5">0</span><span class="s4">;</span>
+<span class="s0">//float Thumbnail::padding = 50.f;</span>
+<span class="s4">bool </span><span class="s1">Thumbnail::firstThumbnail = </span><span class="s4">true;</span>
+
+
+<span class="s4">void </span><span class="s1">Thumbnail::draw(sf::RenderTarget &amp;window</span><span class="s4">, </span><span class="s1">sf::RenderStates states) </span><span class="s4">const</span>
+<span class="s1">{</span>
+    <span class="s1">window.draw(*sprite</span><span class="s4">, </span><span class="s1">states)</span><span class="s4">;</span>
+<span class="s1">}</span>
+<span class="s1">Thumbnail::Thumbnail()</span>
+<span class="s1">{</span>
+
+<span class="s1">}</span>
+
+<span class="s1">Thumbnail::Thumbnail(std::string image_path</span><span class="s4">, </span><span class="s1">std::string title</span><span class="s4">, </span><span class="s1">sf::Rect&lt;</span><span class="s4">float</span><span class="s1">&gt; leftMargin</span><span class="s4">, </span><span class="s1">sf::Vector2u windowSize)</span>
+        <span class="s1">:title(title</span><span class="s4">, </span><span class="s5">64</span><span class="s4">, </span><span class="s1">sf::Vector2f(windowSize.x/</span><span class="s5">2</span><span class="s4">,</span>
+                                       <span class="s1">windowSize.y*</span><span class="s5">0.85</span><span class="s1">))</span>
+<span class="s1">{</span>
+    <span class="s1">setLeftMargin(leftMargin)</span><span class="s4">;</span>
+    <span class="s1">setWindowSize(windowSize)</span><span class="s4">;</span>
+    <span class="s4">this</span><span class="s1">-&gt;image_path = image_path</span><span class="s4">;</span>
+    <span class="s1">initialize()</span><span class="s4">;</span>
+<span class="s1">}</span>
+<span class="s1">std::string Thumbnail::getImagePath() {</span>
+    <span class="s4">return </span><span class="s1">image_path</span><span class="s4">;</span>
+<span class="s1">}</span>
+<span class="s0">//Thumbnail::~Thumbnail()</span>
+<span class="s0">//{</span>
+<span class="s0">//    if(texture != nullptr)</span>
+<span class="s0">//        delete texture;</span>
+<span class="s0">//    if(sprite != nullptr)</span>
+<span class="s0">//        delete sprite;</span>
+<span class="s0">//}</span>
+<span class="s4">void </span><span class="s1">Thumbnail::initialize()</span>
+<span class="s1">{</span>
+    <span class="s1">texture = </span><span class="s4">new </span><span class="s1">sf::Texture</span><span class="s4">;</span>
+    <span class="s1">sprite = </span><span class="s4">new </span><span class="s1">sf::RectangleShape</span><span class="s4">;</span>
+    <span class="s1">setThumbnail()</span><span class="s4">;</span>
+<span class="s1">}</span>
+<span class="s4">void </span><span class="s1">Thumbnail::setPosition()</span>
+<span class="s1">{</span>
+    <span class="s1">y = windowSize.y/</span><span class="s5">2 </span><span class="s1">- sprite-&gt;getGlobalBounds().height/</span><span class="s5">2</span><span class="s4">;</span>
+    <span class="s4">if</span><span class="s1">(firstThumbnail == </span><span class="s4">true</span><span class="s1">) {</span>
+        <span class="s1">x += sprite-&gt;getSize().x - </span><span class="s5">20</span><span class="s4">;</span>
+        <span class="s1">firstThumbnail = </span><span class="s4">false;</span>
+        <span class="s1">selected = </span><span class="s4">true;</span>
+    <span class="s1">}</span>
+    <span class="s4">else </span><span class="s1">{</span>
+        <span class="s1">x += sprite-&gt;getSize().x + padding</span><span class="s4">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">sprite-&gt;setPosition(x</span><span class="s4">, </span><span class="s1">y)</span><span class="s4">;</span>
+<span class="s1">}</span>
+<span class="s4">void </span><span class="s1">Thumbnail::setFrame()</span>
+<span class="s1">{</span>
+    <span class="s1">sprite-&gt;setTextureRect(sf::IntRect(</span><span class="s5">0</span><span class="s4">, </span><span class="s5">0</span><span class="s4">, </span><span class="s5">0</span><span class="s4">, </span><span class="s5">285</span><span class="s1">))</span><span class="s4">;</span>
+<span class="s1">}</span>
+<span class="s4">void </span><span class="s1">Thumbnail::setThumbnail()</span>
+<span class="s1">{</span>
+    <span class="s4">if </span><span class="s1">(texture-&gt;loadFromFile(image_path))</span>
+    <span class="s1">{</span>
+        <span class="s1">texture-&gt;setRepeated(</span><span class="s4">false</span><span class="s1">)</span><span class="s4">;</span>
+        <span class="s1">sprite-&gt;setTexture(texture)</span><span class="s4">;</span>
+        <span class="s1">sprite-&gt;setOutlineColor(sf::Color::White)</span><span class="s4">;</span>
+        <span class="s1">sprite-&gt;setSize(sf::Vector2f(</span><span class="s5">300.f</span><span class="s4">, </span><span class="s5">300.f</span><span class="s1">))</span><span class="s4">;</span>
+        <span class="s1">sprite-&gt;setOutlineThickness(</span><span class="s5">5.f</span><span class="s1">)</span><span class="s4">;</span>
+        <span class="s1">loaded = </span><span class="s4">true;</span>
+        <span class="s1">setPosition()</span><span class="s4">;</span>
+        <span class="s0">//setFrame();</span>
+
+    <span class="s1">}</span>
+    <span class="s4">else</span>
+    <span class="s1">{</span>
+        <span class="s1">loaded = </span><span class="s4">false;</span>
+        <span class="s1">std::cout&lt;&lt;</span><span class="s3">&quot;image not loaded&quot;</span><span class="s4">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">//assert(isThumbnailLoaded());</span>
+<span class="s1">}</span>
+<span class="s4">bool </span><span class="s1">Thumbnail::isThumbnailLoaded()</span>
+<span class="s1">{</span>
+    <span class="s4">return </span><span class="s1">loaded</span><span class="s4">;</span>
+<span class="s1">}</span>
+
+<span class="s1">sf::RectangleShape* Thumbnail::getThumbnail(){</span>
+
+    <span class="s4">return </span><span class="s1">sprite</span><span class="s4">;</span>
+<span class="s1">}</span>
+
+<span class="s4">void </span><span class="s1">Thumbnail::setWindowSize(sf::Vector2&lt;</span><span class="s4">unsigned int</span><span class="s1">&gt; windowSize)</span>
+<span class="s1">{</span>
+    <span class="s4">this</span><span class="s1">-&gt;windowSize.x =  windowSize.x</span><span class="s4">;</span>
+    <span class="s4">this</span><span class="s1">-&gt;windowSize.y =  windowSize.y</span><span class="s4">;</span>
+<span class="s1">}</span>
+
+<span class="s4">void </span><span class="s1">Thumbnail::setLeftMargin(sf::Rect&lt;</span><span class="s4">float</span><span class="s1">&gt;&amp; margin)</span>
+<span class="s1">{</span>
+    <span class="s1">leftMargin.width = margin.width</span><span class="s4">;</span>
+    <span class="s1">leftMargin.height = margin.height</span><span class="s4">;</span>
+<span class="s1">}</span>
+
+
+<span class="s1">GameText Thumbnail::getTitle()</span>
+<span class="s1">{</span>
+    <span class="s4">return </span><span class="s1">title</span><span class="s4">;</span>
+<span class="s1">}</span>
+<span class="s4">void </span><span class="s1">Thumbnail::setSelected(</span><span class="s4">bool </span><span class="s1">choice)</span>
+<span class="s1">{</span>
+    <span class="s1">selected = choice</span><span class="s4">;</span>
+<span class="s1">}</span>
+<span class="s4">bool </span><span class="s1">Thumbnail::getSelected()</span>
+<span class="s1">{</span>
+    <span class="s4">return </span><span class="s1">selected</span><span class="s4">;</span>
+<span class="s1">}</span>
+<span class="s4">void </span><span class="s1">Thumbnail::highlightThumbnail()</span>
+<span class="s1">{</span>
+    <span class="s1">sprite-&gt;setOutlineThickness(</span><span class="s5">10.f</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">sprite-&gt;setOutlineColor(sf::Color::Yellow)</span><span class="s4">;</span>
+<span class="s1">}</span>
+<span class="s4">void </span><span class="s1">Thumbnail::unhighlightThumbnail()</span>
+<span class="s1">{</span>
+    <span class="s1">sprite-&gt;setOutlineThickness(</span><span class="s5">5.f</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">sprite-&gt;setOutlineColor(sf::Color::White)</span><span class="s4">;</span>
+<span class="s1">}</span>
+
+<span class="s1">sf::Texture* Thumbnail::getTexture(){</span>
+    <span class="s4">return </span><span class="s1">texture</span><span class="s4">;</span>
+<span class="s1">}</span></pre>
+</body>
+</html>

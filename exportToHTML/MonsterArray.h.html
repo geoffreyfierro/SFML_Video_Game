@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>MonsterArray.h</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #bbb529;}
+.s3 { color: #6a8759;}
+.s4 { color: #cc7832;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+MonsterArray.h</font>
+</center></td></tr></table>
+<pre><span class="s0">//</span>
+<span class="s0">// Created by geoff on 6/10/2020.</span>
+<span class="s0">//</span>
+
+<span class="s2">#ifndef </span><span class="s1">SFML_PROJECT_MONSTERARRAY_H</span>
+<span class="s2">#define </span><span class="s1">SFML_PROJECT_MONSTERARRAY_H</span>
+
+<span class="s2">#include </span><span class="s3">&lt;SFML/Graphics.hpp&gt;</span>
+<span class="s2">#include </span><span class="s3">&lt;vector&gt;</span>
+<span class="s2">#include </span><span class="s3">&quot;Monster.h&quot;</span>
+
+<span class="s4">class </span><span class="s1">MonsterArray {</span>
+<span class="s4">public</span><span class="s1">:</span>
+    <span class="s1">std::vector&lt;Monster*&gt; monster</span><span class="s4">;</span>
+
+    <span class="s1">MonsterArray()</span><span class="s4">;</span>
+    <span class="s4">void </span><span class="s1">addMonster(</span><span class="s4">float </span><span class="s1">x</span><span class="s4">, float </span><span class="s1">y</span><span class="s4">, float </span><span class="s1">xDistance)</span><span class="s4">;</span>
+    <span class="s4">void </span><span class="s1">update()</span><span class="s4">;</span>
+
+<span class="s1">}</span><span class="s4">;</span>
+
+
+<span class="s2">#endif </span><span class="s0">//SFML_PROJECT_MONSTERARRAY_H</span>
+</pre>
+</body>
+</html>

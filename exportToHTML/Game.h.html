@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Game.h</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #bbb529;}
+.s3 { color: #6a8759;}
+.s4 { color: #cc7832;}
+.s5 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Game.h</font>
+</center></td></tr></table>
+<pre><span class="s0">//</span>
+<span class="s0">// Created by Dave R. Smith on 10/25/19.</span>
+<span class="s0">//</span>
+
+<span class="s2">#ifndef </span><span class="s1">TEST_STATIC_GAME_H</span>
+<span class="s2">#define </span><span class="s1">TEST_STATIC_GAME_H</span>
+<span class="s2">#include </span><span class="s3">&lt;string&gt;</span>
+<span class="s2">#include </span><span class="s3">&lt;list&gt;</span>
+<span class="s0">//#include &quot;Game_Interface.h&quot;</span>
+<span class="s2">#include </span><span class="s3">&lt;SFML/Graphics.hpp&gt;</span>
+<span class="s2">#include </span><span class="s3">&quot;Thumbnail.h&quot;</span>
+<span class="s2">#include </span><span class="s3">&quot;GameText.h&quot;</span>
+<span class="s2">#include </span><span class="s3">&lt;fstream&gt;</span>
+<span class="s4">using </span><span class="s1">std::string</span><span class="s4">;</span>
+
+<span class="s4">class </span><span class="s1">Game :  </span><span class="s4">public </span><span class="s1">sf::Transformable</span><span class="s4">, public </span><span class="s1">sf::Drawable {</span>
+<span class="s4">private</span><span class="s1">:</span>
+    <span class="s0">//static std::map&lt;std::string, const Game&amp;&gt; LOAD_GAME;</span>
+    <span class="s4">void </span><span class="s1">setThumbnail()</span><span class="s4">;</span>
+    <span class="s1">Thumbnail thumbnail</span><span class="s4">;</span>
+<span class="s4">protected</span><span class="s1">:</span>
+    <span class="s1">string image_path</span><span class="s4">;</span>
+    <span class="s1">string info_path</span><span class="s4">;</span>
+    <span class="s1">string title</span><span class="s4">;</span>
+    <span class="s4">void </span><span class="s1">init()</span><span class="s4">;</span>
+
+
+<span class="s4">public</span><span class="s1">:</span>
+    <span class="s1">sf::RectangleShape* getSfThumbnail()</span><span class="s4">;</span>
+    <span class="s1">string getTitle()</span><span class="s4">;</span>
+    <span class="s1">Thumbnail getThumbnail()</span><span class="s4">;</span>
+    <span class="s1">Game()</span><span class="s4">;</span>
+    <span class="s4">void </span><span class="s1">load_game()</span><span class="s4">;</span>
+    <span class="s1">std::string getImagePath()</span><span class="s4">;</span>
+    <span class="s4">virtual void </span><span class="s1">start(sf::RenderWindow&amp; window) = </span><span class="s5">0</span><span class="s4">;</span>
+    <span class="s4">virtual void </span><span class="s1">addEvents(sf::RenderWindow &amp;window) = </span><span class="s5">0</span><span class="s4">;</span>
+    <span class="s4">virtual void </span><span class="s1">addEvents(</span><span class="s4">const </span><span class="s1">sf::RenderWindow &amp;window</span><span class="s4">, </span><span class="s1">sf::Event&amp; event) = </span><span class="s5">0</span><span class="s4">;</span>
+    <span class="s4">virtual void </span><span class="s1">draw(sf::RenderTarget &amp;window</span><span class="s4">, </span><span class="s1">sf::RenderStates states) </span><span class="s4">const </span><span class="s1">= </span><span class="s5">0</span><span class="s4">;</span>
+    <span class="s4">virtual void </span><span class="s1">exit() = </span><span class="s5">0</span><span class="s4">;</span>
+    <span class="s1">GameText getInfo(sf::RenderWindow &amp;window)</span><span class="s4">;</span>
+
+<span class="s1">}</span><span class="s4">;</span>
+
+
+<span class="s2">#endif </span><span class="s0">//TEST_STATIC_GAME_H</span>
+</pre>
+</body>
+</html>

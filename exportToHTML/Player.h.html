@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>Player.h</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #bbb529;}
+.s3 { color: #6a8759;}
+.s4 { color: #cc7832;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Player.h</font>
+</center></td></tr></table>
+<pre><span class="s0">//</span>
+<span class="s0">// Created by geoff on 5/27/2020.</span>
+<span class="s0">//</span>
+
+<span class="s2">#ifndef </span><span class="s1">SFML_PROJECT_PLAYER_H</span>
+<span class="s2">#define </span><span class="s1">SFML_PROJECT_PLAYER_H</span>
+
+<span class="s2">#include </span><span class="s3">&lt;SFML/Graphics.hpp&gt;</span>
+<span class="s2">#include </span><span class="s3">&lt;iostream&gt;</span>
+<span class="s2">#include </span><span class="s3">&quot;Platform.h&quot;</span>
+<span class="s2">#include </span><span class="s3">&quot;Map.h&quot;</span>
+<span class="s2">#include </span><span class="s3">&quot;Monster.h&quot;</span>
+<span class="s2">#include </span><span class="s3">&quot;MonsterArray.h&quot;</span>
+<span class="s2">#include </span><span class="s3">&quot;FinishFlag.h&quot;</span>
+
+<span class="s4">class </span><span class="s1">Player{</span>
+<span class="s4">private</span><span class="s1">:</span>
+    <span class="s1">sf::Sprite player</span><span class="s4">;</span>
+    <span class="s1">sf::Texture snailRight</span><span class="s4">;</span>
+    <span class="s1">sf::Texture snailLeft</span><span class="s4">;</span>
+
+    <span class="s4">int </span><span class="s1">lives</span><span class="s4">;</span>
+    <span class="s4">float </span><span class="s1">xSpeed</span><span class="s4">, </span><span class="s1">ySpeed</span><span class="s4">;</span>
+    <span class="s4">bool </span><span class="s1">onGround</span><span class="s4">, </span><span class="s1">isCollided</span><span class="s4">;</span>
+    <span class="s4">bool </span><span class="s1">hitMonster</span><span class="s4">;</span>
+
+    <span class="s4">bool </span><span class="s1">wonGame</span><span class="s4">;</span>
+
+    <span class="s4">float </span><span class="s1">topSide</span><span class="s4">, </span><span class="s1">leftSide</span><span class="s4">;</span>
+
+    <span class="s4">float </span><span class="s1">accelGrav</span><span class="s4">;</span>
+    <span class="s4">float </span><span class="s1">maxGrav</span><span class="s4">;</span>
+    <span class="s4">float </span><span class="s1">jumpHeight</span><span class="s4">;</span>
+
+<span class="s4">protected</span><span class="s1">:</span>
+
+<span class="s4">public</span><span class="s1">:</span>
+    <span class="s1">Player()</span><span class="s4">;</span>
+    <span class="s4">void </span><span class="s1">update(Map map</span><span class="s4">, </span><span class="s1">MonsterArray monster</span><span class="s4">, </span><span class="s1">FinishFlag flag)</span><span class="s4">;</span>
+    <span class="s4">void </span><span class="s1">collision(</span><span class="s4">float </span><span class="s1">xVol</span><span class="s4">, float </span><span class="s1">yVol</span><span class="s4">, </span><span class="s1">Map map)</span><span class="s4">;</span>
+    <span class="s4">void </span><span class="s1">monsterCollision(MonsterArray monster)</span><span class="s4">;</span>
+    <span class="s4">void </span><span class="s1">checkGameWin(FinishFlag flag)</span><span class="s4">;</span>
+
+    <span class="s4">int </span><span class="s1">getLives()</span><span class="s4">;</span>
+    <span class="s4">bool </span><span class="s1">isDead()</span><span class="s4">;</span>
+    <span class="s4">bool </span><span class="s1">getGameWon()</span><span class="s4">;</span>
+
+    <span class="s4">void </span><span class="s1">draw(sf::RenderWindow &amp;window)</span><span class="s4">;</span>
+    <span class="s1">sf::Vector2f getPositionCenter()</span><span class="s4">;</span>
+<span class="s1">}</span><span class="s4">;</span>
+
+
+<span class="s2">#endif </span><span class="s0">//SFML_PROJECT_PLAYER_H</span>
+</pre>
+</body>
+</html>
